@@ -1,0 +1,167 @@
+\hypertarget{class_long_notes}{}\section{Long\+Notes Class Reference}
+\label{class_long_notes}\index{Long\+Notes@{Long\+Notes}}
+
+
+長押しノーツ  
+
+
+Inheritance diagram for Long\+Notes\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_long_notes}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_long_notes_a080003953680dc4bfa81ef19cabae1c7}{Init} (int lane\+No, float down, float up)
+\begin{DoxyCompactList}\small\item\em 初期化 \end{DoxyCompactList}\item 
+override void \hyperlink{class_long_notes_a8af8f2d9bd19746a903571ddbde988d9}{Move} ()
+\begin{DoxyCompactList}\small\item\em 移動 \end{DoxyCompactList}\item 
+void \hyperlink{class_long_notes_a7f87f264cfd9cc1eb4d5eaa48a1c0be2}{On\+Touch\+Began} ()
+\begin{DoxyCompactList}\small\item\em 押したときの処理 \end{DoxyCompactList}\item 
+void \hyperlink{class_long_notes_a33503ed24d2d1b642424f0c106c5d8e3}{On\+Touch\+End} ()
+\begin{DoxyCompactList}\small\item\em タッチが離された時の処理 \end{DoxyCompactList}\item 
+override void \hyperlink{class_long_notes_acebb95804b8bb34b709d74b4d97518dd}{Miss} ()
+\begin{DoxyCompactList}\small\item\em 失敗処理 \end{DoxyCompactList}\item 
+override void \hyperlink{class_long_notes_aefca60d75a0c00f72028f4656400e1d0}{Rec\+Init} (int lane\+No, float down, float up)
+\begin{DoxyCompactList}\small\item\em 録画シーンの初期化 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int {\bfseries ID} = 2\hypertarget{class_long_notes_a9669e9d0f3262d47000660258fbf3dd0}{}\label{class_long_notes_a9669e9d0f3262d47000660258fbf3dd0}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+override bool \hyperlink{class_long_notes_a958688f3d3eaca0f9fffaa3fab9b6fd8}{is\+Reset}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em リセットフラグ \end{DoxyCompactList}\item 
+override bool \hyperlink{class_long_notes_aff79ae0d453a14c68ce63bf57c01c6b0}{is\+Miss}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em ミスフラグ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+長押しノーツ 
+
+
+
+\subsection{Member Function Documentation}
+\index{Long\+Notes@{Long\+Notes}!Init@{Init}}
+\index{Init@{Init}!Long\+Notes@{Long\+Notes}}
+\subsubsection[{\texorpdfstring{Init(int lane\+No, float down, float up)}{Init(int laneNo, float down, float up)}}]{\setlength{\rightskip}{0pt plus 5cm}override void Long\+Notes.\+Init (
+\begin{DoxyParamCaption}
+\item[{int}]{lane\+No, }
+\item[{float}]{down, }
+\item[{float}]{up}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{class_long_notes_a080003953680dc4bfa81ef19cabae1c7}{}\label{class_long_notes_a080003953680dc4bfa81ef19cabae1c7}
+
+
+初期化 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lane\+No} & \\
+\hline
+{\em down} & \\
+\hline
+{\em up} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_notes_base}{Notes\+Base}.
+
+\index{Long\+Notes@{Long\+Notes}!Miss@{Miss}}
+\index{Miss@{Miss}!Long\+Notes@{Long\+Notes}}
+\subsubsection[{\texorpdfstring{Miss()}{Miss()}}]{\setlength{\rightskip}{0pt plus 5cm}override void Long\+Notes.\+Miss (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{class_long_notes_acebb95804b8bb34b709d74b4d97518dd}{}\label{class_long_notes_acebb95804b8bb34b709d74b4d97518dd}
+
+
+失敗処理 
+
+
+
+Reimplemented from \hyperlink{class_notes_base}{Notes\+Base}.
+
+\index{Long\+Notes@{Long\+Notes}!Move@{Move}}
+\index{Move@{Move}!Long\+Notes@{Long\+Notes}}
+\subsubsection[{\texorpdfstring{Move()}{Move()}}]{\setlength{\rightskip}{0pt plus 5cm}override void Long\+Notes.\+Move (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{class_long_notes_a8af8f2d9bd19746a903571ddbde988d9}{}\label{class_long_notes_a8af8f2d9bd19746a903571ddbde988d9}
+
+
+移動 
+
+
+
+Reimplemented from \hyperlink{class_notes_base}{Notes\+Base}.
+
+\index{Long\+Notes@{Long\+Notes}!On\+Touch\+Began@{On\+Touch\+Began}}
+\index{On\+Touch\+Began@{On\+Touch\+Began}!Long\+Notes@{Long\+Notes}}
+\subsubsection[{\texorpdfstring{On\+Touch\+Began()}{OnTouchBegan()}}]{\setlength{\rightskip}{0pt plus 5cm}void Long\+Notes.\+On\+Touch\+Began (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_long_notes_a7f87f264cfd9cc1eb4d5eaa48a1c0be2}{}\label{class_long_notes_a7f87f264cfd9cc1eb4d5eaa48a1c0be2}
+
+
+押したときの処理 
+
+\index{Long\+Notes@{Long\+Notes}!On\+Touch\+End@{On\+Touch\+End}}
+\index{On\+Touch\+End@{On\+Touch\+End}!Long\+Notes@{Long\+Notes}}
+\subsubsection[{\texorpdfstring{On\+Touch\+End()}{OnTouchEnd()}}]{\setlength{\rightskip}{0pt plus 5cm}void Long\+Notes.\+On\+Touch\+End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_long_notes_a33503ed24d2d1b642424f0c106c5d8e3}{}\label{class_long_notes_a33503ed24d2d1b642424f0c106c5d8e3}
+
+
+タッチが離された時の処理 
+
+\index{Long\+Notes@{Long\+Notes}!Rec\+Init@{Rec\+Init}}
+\index{Rec\+Init@{Rec\+Init}!Long\+Notes@{Long\+Notes}}
+\subsubsection[{\texorpdfstring{Rec\+Init(int lane\+No, float down, float up)}{RecInit(int laneNo, float down, float up)}}]{\setlength{\rightskip}{0pt plus 5cm}override void Long\+Notes.\+Rec\+Init (
+\begin{DoxyParamCaption}
+\item[{int}]{lane\+No, }
+\item[{float}]{down, }
+\item[{float}]{up}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{class_long_notes_aefca60d75a0c00f72028f4656400e1d0}{}\label{class_long_notes_aefca60d75a0c00f72028f4656400e1d0}
+
+
+録画シーンの初期化 
+
+
+
+Reimplemented from \hyperlink{class_notes_base}{Notes\+Base}.
+
+
+
+\subsection{Property Documentation}
+\index{Long\+Notes@{Long\+Notes}!is\+Miss@{is\+Miss}}
+\index{is\+Miss@{is\+Miss}!Long\+Notes@{Long\+Notes}}
+\subsubsection[{\texorpdfstring{is\+Miss}{isMiss}}]{\setlength{\rightskip}{0pt plus 5cm}override bool Long\+Notes.\+is\+Miss\hspace{0.3cm}{\ttfamily [get]}}\hypertarget{class_long_notes_aff79ae0d453a14c68ce63bf57c01c6b0}{}\label{class_long_notes_aff79ae0d453a14c68ce63bf57c01c6b0}
+
+
+ミスフラグ 
+
+\index{Long\+Notes@{Long\+Notes}!is\+Reset@{is\+Reset}}
+\index{is\+Reset@{is\+Reset}!Long\+Notes@{Long\+Notes}}
+\subsubsection[{\texorpdfstring{is\+Reset}{isReset}}]{\setlength{\rightskip}{0pt plus 5cm}override bool Long\+Notes.\+is\+Reset\hspace{0.3cm}{\ttfamily [get]}}\hypertarget{class_long_notes_a958688f3d3eaca0f9fffaa3fab9b6fd8}{}\label{class_long_notes_a958688f3d3eaca0f9fffaa3fab9b6fd8}
+
+
+リセットフラグ 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scripts/\+Notes/Long\+Notes.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,146 @@
+\hypertarget{class_touch_area_base}{}\section{Touch\+Area\+Base Class Reference}
+\label{class_touch_area_base}\index{Touch\+Area\+Base@{Touch\+Area\+Base}}
+Inheritance diagram for Touch\+Area\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_touch_area_base}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_touch_area_base_a3d23db92ff531c2766cbd8547620b57d}{Touch\+Area\+Base} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+void \hyperlink{class_touch_area_base_ad22019b970c42ebd4d6c9d44b5efcdcb}{Set\+Center\+Pos} (Vector3 pos)
+\begin{DoxyCompactList}\small\item\em 中心点のセッター \end{DoxyCompactList}\item 
+void \hyperlink{class_touch_area_base_aa63f2d3e25e2343fee2f2993a34e22ea}{Set\+Camera} (Camera camera)
+\begin{DoxyCompactList}\small\item\em 座標変換に使うカメラの設定 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_touch_area_base_a9d4d8709065668bea45eecf59c41401b}{Set\+Transform\+Data} ()
+\begin{DoxyCompactList}\small\item\em Transformの値から自身の\+Parameterを設定する \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_touch_area_base_a775cebdb39ddba5717a89f8ff8d1c810}{On\+Draw\+Gizmos} ()
+\begin{DoxyCompactList}\small\item\em ギズモ表示 \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_touch_area_base_a94f9466d4f70a449055e72b86d23378c}{Reset} ()
+\begin{DoxyCompactList}\small\item\em リセット時処理 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Camera {\bfseries camera}\hypertarget{class_touch_area_base_afd86e8792674bcb666bc375f5ffbb59c}{}\label{class_touch_area_base_afd86e8792674bcb666bc375f5ffbb59c}
+
+\item 
+Vector3 {\bfseries center}\hypertarget{class_touch_area_base_aab6aa27813bea53d6965fd317ab26678}{}\label{class_touch_area_base_aab6aa27813bea53d6965fd317ab26678}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Vector3 {\bfseries Center}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{class_touch_area_base_aa03f7d1a17e305dbf35cf9bab9507750}{}\label{class_touch_area_base_aa03f7d1a17e305dbf35cf9bab9507750}
+
+\item 
+bool {\bfseries is\+Active}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}\hypertarget{class_touch_area_base_a05cc964aef7d963af58d5f838d6057e5}{}\label{class_touch_area_base_a05cc964aef7d963af58d5f838d6057e5}
+
+\item 
+virtual bool {\bfseries is\+Touch}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}\hypertarget{class_touch_area_base_ad08fbf97559988d8e4a4463fe0b02677}{}\label{class_touch_area_base_ad08fbf97559988d8e4a4463fe0b02677}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Touch\+Area\+Base@{Touch\+Area\+Base}!Touch\+Area\+Base@{Touch\+Area\+Base}}
+\index{Touch\+Area\+Base@{Touch\+Area\+Base}!Touch\+Area\+Base@{Touch\+Area\+Base}}
+\subsubsection[{\texorpdfstring{Touch\+Area\+Base()}{TouchAreaBase()}}]{\setlength{\rightskip}{0pt plus 5cm}Touch\+Area\+Base.\+Touch\+Area\+Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_touch_area_base_a3d23db92ff531c2766cbd8547620b57d}{}\label{class_touch_area_base_a3d23db92ff531c2766cbd8547620b57d}
+
+
+コンストラクタ 
+
+
+
+\subsection{Member Function Documentation}
+\index{Touch\+Area\+Base@{Touch\+Area\+Base}!On\+Draw\+Gizmos@{On\+Draw\+Gizmos}}
+\index{On\+Draw\+Gizmos@{On\+Draw\+Gizmos}!Touch\+Area\+Base@{Touch\+Area\+Base}}
+\subsubsection[{\texorpdfstring{On\+Draw\+Gizmos()}{OnDrawGizmos()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Touch\+Area\+Base.\+On\+Draw\+Gizmos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_touch_area_base_a775cebdb39ddba5717a89f8ff8d1c810}{}\label{class_touch_area_base_a775cebdb39ddba5717a89f8ff8d1c810}
+
+
+ギズモ表示 
+
+
+
+Reimplemented in \hyperlink{class_touch_area_box_ad8e11cacc1d3089309346c13da4f2a88}{Touch\+Area\+Box}, and \hyperlink{class_touch_area_circle_a42b59d970df599ef088e0cdbc9a90329}{Touch\+Area\+Circle}.
+
+\index{Touch\+Area\+Base@{Touch\+Area\+Base}!Reset@{Reset}}
+\index{Reset@{Reset}!Touch\+Area\+Base@{Touch\+Area\+Base}}
+\subsubsection[{\texorpdfstring{Reset()}{Reset()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Touch\+Area\+Base.\+Reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_touch_area_base_a94f9466d4f70a449055e72b86d23378c}{}\label{class_touch_area_base_a94f9466d4f70a449055e72b86d23378c}
+
+
+リセット時処理 
+
+
+
+Reimplemented in \hyperlink{class_touch_area_box_a3ee37c987ffa5e7e23d75736e7a46483}{Touch\+Area\+Box}.
+
+\index{Touch\+Area\+Base@{Touch\+Area\+Base}!Set\+Camera@{Set\+Camera}}
+\index{Set\+Camera@{Set\+Camera}!Touch\+Area\+Base@{Touch\+Area\+Base}}
+\subsubsection[{\texorpdfstring{Set\+Camera(\+Camera camera)}{SetCamera(Camera camera)}}]{\setlength{\rightskip}{0pt plus 5cm}void Touch\+Area\+Base.\+Set\+Camera (
+\begin{DoxyParamCaption}
+\item[{Camera}]{camera}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_touch_area_base_aa63f2d3e25e2343fee2f2993a34e22ea}{}\label{class_touch_area_base_aa63f2d3e25e2343fee2f2993a34e22ea}
+
+
+座標変換に使うカメラの設定 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \\
+\hline
+\end{DoxyParams}
+\index{Touch\+Area\+Base@{Touch\+Area\+Base}!Set\+Center\+Pos@{Set\+Center\+Pos}}
+\index{Set\+Center\+Pos@{Set\+Center\+Pos}!Touch\+Area\+Base@{Touch\+Area\+Base}}
+\subsubsection[{\texorpdfstring{Set\+Center\+Pos(\+Vector3 pos)}{SetCenterPos(Vector3 pos)}}]{\setlength{\rightskip}{0pt plus 5cm}void Touch\+Area\+Base.\+Set\+Center\+Pos (
+\begin{DoxyParamCaption}
+\item[{Vector3}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_touch_area_base_ad22019b970c42ebd4d6c9d44b5efcdcb}{}\label{class_touch_area_base_ad22019b970c42ebd4d6c9d44b5efcdcb}
+
+
+中心点のセッター 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \\
+\hline
+\end{DoxyParams}
+\index{Touch\+Area\+Base@{Touch\+Area\+Base}!Set\+Transform\+Data@{Set\+Transform\+Data}}
+\index{Set\+Transform\+Data@{Set\+Transform\+Data}!Touch\+Area\+Base@{Touch\+Area\+Base}}
+\subsubsection[{\texorpdfstring{Set\+Transform\+Data()}{SetTransformData()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Touch\+Area\+Base.\+Set\+Transform\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_touch_area_base_a9d4d8709065668bea45eecf59c41401b}{}\label{class_touch_area_base_a9d4d8709065668bea45eecf59c41401b}
+
+
+Transformの値から自身の\+Parameterを設定する 
+
+
+
+Reimplemented in \hyperlink{class_touch_area_box_a5905a11595e6007eaf06308f832cafe4}{Touch\+Area\+Box}, and \hyperlink{class_touch_area_circle_ae8c15b781f6ddee17bda483bd9c8b0a0}{Touch\+Area\+Circle}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scripts/\+Touch/Touch\+Area\+Base.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,264 @@
+\hypertarget{class_notes_manager}{}\section{Notes\+Manager Class Reference}
+\label{class_notes_manager}\index{Notes\+Manager@{Notes\+Manager}}
+
+
+ノーツ管理  
+
+
+Inheritance diagram for Notes\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_notes_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Init} ()\hypertarget{class_notes_manager_a5c7e5c0033598dd87f078fb24397a0bc}{}\label{class_notes_manager_a5c7e5c0033598dd87f078fb24397a0bc}
+
+\item 
+void \hyperlink{class_notes_manager_a6f4913237b8e3a4e68f5172f71e51590}{update} ()
+\begin{DoxyCompactList}\small\item\em 更新 \end{DoxyCompactList}\item 
+void \hyperlink{class_notes_manager_afeb4ec920546b7cc061c50bf2c378f05}{Set\+Notes\+Num} (int num)
+\begin{DoxyCompactList}\small\item\em ノーツ総数をセット \end{DoxyCompactList}\item 
+void \hyperlink{class_notes_manager_a7be6fd1ad14c143595d4d566cba15442}{Set\+Judge\+Num} (int num)
+\begin{DoxyCompactList}\small\item\em 判定するノーツ数をセット ノーツ総数では長押しノーツは1個の扱いだが、 長押しノーツはヘッドとテイルの2個の判定のため判定数は別となる \end{DoxyCompactList}\item 
+void \hyperlink{class_notes_manager_a5f5c4538a0d5e8e7cbd9951dddb718d5}{Set\+Notes\+Speed} (float speed)
+\begin{DoxyCompactList}\small\item\em ノーツの速度 \end{DoxyCompactList}\item 
+void \hyperlink{class_notes_manager_a525cac5533517b75264f0b01b86373d1}{Set\+Active\+Time} (float activate\+Time)
+\begin{DoxyCompactList}\small\item\em ノーツのアクティブ時間 \end{DoxyCompactList}\item 
+void {\bfseries Set\+Elapsed\+Time} (float time)\hypertarget{class_notes_manager_af3b3d718a9bb6dea98b77836bce7ae99}{}\label{class_notes_manager_af3b3d718a9bb6dea98b77836bce7ae99}
+
+\item 
+void \hyperlink{class_notes_manager_a4a2a80e4a52c701ec09c6911cb5e0d2c}{Add\+Notes\+Data} (int id, int point, float down, float up)
+\begin{DoxyCompactList}\small\item\em ノーツを構成する追加 \end{DoxyCompactList}\item 
+\hyperlink{class_notes_base}{Notes\+Base}\mbox{[}$\,$\mbox{]} \hyperlink{class_notes_manager_ad0f90502e260178cf41ba3ec92cc3fcb}{Get\+Lane\+Area\+Notes} (int lane\+No)
+\begin{DoxyCompactList}\small\item\em レーン内のノーツを返す \end{DoxyCompactList}\item 
+void \hyperlink{class_notes_manager_a002c55a58d51fb7913a318005fd68edc}{Add\+Perfect\+Score} ()
+\begin{DoxyCompactList}\small\item\em 良判定時の加算スコア \end{DoxyCompactList}\item 
+void \hyperlink{class_notes_manager_ac6935fc8ab7e7b078f89777355d110ab}{Add\+Great\+Score} ()
+\begin{DoxyCompactList}\small\item\em 可判定時の加算スコア \end{DoxyCompactList}\item 
+void \hyperlink{class_notes_manager_adcdb5132e598c4d160197c6bfd2ca644}{Add\+Bad\+Score} ()
+\begin{DoxyCompactList}\small\item\em 不可判定時の加算スコア \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries perfect\+Time} = 0.\+1f\hypertarget{class_notes_manager_af2d67fbf2a1f1aeeb1f77bcdb990bfe4}{}\label{class_notes_manager_af2d67fbf2a1f1aeeb1f77bcdb990bfe4}
+
+\item 
+float {\bfseries great\+Time} = 0.\+4f\hypertarget{class_notes_manager_a9fc673597e58d17984e3614ca826fb2b}{}\label{class_notes_manager_a9fc673597e58d17984e3614ca826fb2b}
+
+\item 
+float {\bfseries bad\+Time} = 0.\+7f\hypertarget{class_notes_manager_a2873161ada543ab35986a562fca4676f}{}\label{class_notes_manager_a2873161ada543ab35986a562fca4676f}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries elapsed\+Time}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{class_notes_manager_a3f0739630828dd12544e9ccd8951c9f6}{}\label{class_notes_manager_a3f0739630828dd12544e9ccd8951c9f6}
+
+\item 
+float {\bfseries Reset\+Height}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{class_notes_manager_aa471b2d457b6f828c82e137f1254caed}{}\label{class_notes_manager_aa471b2d457b6f828c82e137f1254caed}
+
+\item 
+float {\bfseries Judge\+Height}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{class_notes_manager_a6d79946cb97aaf9ec36409655ae13c31}{}\label{class_notes_manager_a6d79946cb97aaf9ec36409655ae13c31}
+
+\item 
+float {\bfseries Active\+Time}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{class_notes_manager_a039913c3746ed4e4cc1712f8a0e09d78}{}\label{class_notes_manager_a039913c3746ed4e4cc1712f8a0e09d78}
+
+\item 
+float {\bfseries Speed}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{class_notes_manager_aa758a63cea01c1160bc179e6b83829c5}{}\label{class_notes_manager_aa758a63cea01c1160bc179e6b83829c5}
+
+\item 
+int {\bfseries Notes\+Num}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{class_notes_manager_aa9d24659a5c5da17b6c0b812fbef0172}{}\label{class_notes_manager_aa9d24659a5c5da17b6c0b812fbef0172}
+
+\item 
+int {\bfseries Judge\+Num}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{class_notes_manager_a10f608cca7565faaa5c445260ccc8db6}{}\label{class_notes_manager_a10f608cca7565faaa5c445260ccc8db6}
+
+\item 
+int {\bfseries Success\+Num}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}\hypertarget{class_notes_manager_a7ee9c51ee631ee8b2d0acbb94d02e62f}{}\label{class_notes_manager_a7ee9c51ee631ee8b2d0acbb94d02e62f}
+
+\item 
+int {\bfseries Now\+Combo}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}\hypertarget{class_notes_manager_a7cc3afde1accacb888e538cccdf779e7}{}\label{class_notes_manager_a7cc3afde1accacb888e538cccdf779e7}
+
+\item 
+int {\bfseries Max\+Combo}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}\hypertarget{class_notes_manager_a03877900f087cdab1b06a79ea784f470}{}\label{class_notes_manager_a03877900f087cdab1b06a79ea784f470}
+
+\item 
+int {\bfseries Perfect\+Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}\hypertarget{class_notes_manager_ab767fa94b954df96b2f7ffa443a3c4b5}{}\label{class_notes_manager_ab767fa94b954df96b2f7ffa443a3c4b5}
+
+\item 
+int {\bfseries Great\+Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}\hypertarget{class_notes_manager_a80c613c1930742c45a71ebff81d4faf8}{}\label{class_notes_manager_a80c613c1930742c45a71ebff81d4faf8}
+
+\item 
+int {\bfseries Bad\+Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}\hypertarget{class_notes_manager_aa89e9356b38044f776adfa30f3e7ee42}{}\label{class_notes_manager_aa89e9356b38044f776adfa30f3e7ee42}
+
+\item 
+int {\bfseries Score}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{class_notes_manager_a72d130f7996ccc91f828b4af01fef1f3}{}\label{class_notes_manager_a72d130f7996ccc91f828b4af01fef1f3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+ノーツ管理 
+
+
+
+\subsection{Member Function Documentation}
+\index{Notes\+Manager@{Notes\+Manager}!Add\+Bad\+Score@{Add\+Bad\+Score}}
+\index{Add\+Bad\+Score@{Add\+Bad\+Score}!Notes\+Manager@{Notes\+Manager}}
+\subsubsection[{\texorpdfstring{Add\+Bad\+Score()}{AddBadScore()}}]{\setlength{\rightskip}{0pt plus 5cm}void Notes\+Manager.\+Add\+Bad\+Score (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_notes_manager_adcdb5132e598c4d160197c6bfd2ca644}{}\label{class_notes_manager_adcdb5132e598c4d160197c6bfd2ca644}
+
+
+不可判定時の加算スコア 
+
+\index{Notes\+Manager@{Notes\+Manager}!Add\+Great\+Score@{Add\+Great\+Score}}
+\index{Add\+Great\+Score@{Add\+Great\+Score}!Notes\+Manager@{Notes\+Manager}}
+\subsubsection[{\texorpdfstring{Add\+Great\+Score()}{AddGreatScore()}}]{\setlength{\rightskip}{0pt plus 5cm}void Notes\+Manager.\+Add\+Great\+Score (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_notes_manager_ac6935fc8ab7e7b078f89777355d110ab}{}\label{class_notes_manager_ac6935fc8ab7e7b078f89777355d110ab}
+
+
+可判定時の加算スコア 
+
+\index{Notes\+Manager@{Notes\+Manager}!Add\+Notes\+Data@{Add\+Notes\+Data}}
+\index{Add\+Notes\+Data@{Add\+Notes\+Data}!Notes\+Manager@{Notes\+Manager}}
+\subsubsection[{\texorpdfstring{Add\+Notes\+Data(int id, int point, float down, float up)}{AddNotesData(int id, int point, float down, float up)}}]{\setlength{\rightskip}{0pt plus 5cm}void Notes\+Manager.\+Add\+Notes\+Data (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{int}]{point, }
+\item[{float}]{down, }
+\item[{float}]{up}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_notes_manager_a4a2a80e4a52c701ec09c6911cb5e0d2c}{}\label{class_notes_manager_a4a2a80e4a52c701ec09c6911cb5e0d2c}
+
+
+ノーツを構成する追加 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+{\em point} & \\
+\hline
+{\em down} & \\
+\hline
+{\em up} & \\
+\hline
+\end{DoxyParams}
+\index{Notes\+Manager@{Notes\+Manager}!Add\+Perfect\+Score@{Add\+Perfect\+Score}}
+\index{Add\+Perfect\+Score@{Add\+Perfect\+Score}!Notes\+Manager@{Notes\+Manager}}
+\subsubsection[{\texorpdfstring{Add\+Perfect\+Score()}{AddPerfectScore()}}]{\setlength{\rightskip}{0pt plus 5cm}void Notes\+Manager.\+Add\+Perfect\+Score (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_notes_manager_a002c55a58d51fb7913a318005fd68edc}{}\label{class_notes_manager_a002c55a58d51fb7913a318005fd68edc}
+
+
+良判定時の加算スコア 
+
+\index{Notes\+Manager@{Notes\+Manager}!Get\+Lane\+Area\+Notes@{Get\+Lane\+Area\+Notes}}
+\index{Get\+Lane\+Area\+Notes@{Get\+Lane\+Area\+Notes}!Notes\+Manager@{Notes\+Manager}}
+\subsubsection[{\texorpdfstring{Get\+Lane\+Area\+Notes(int lane\+No)}{GetLaneAreaNotes(int laneNo)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Notes\+Base} \mbox{[}$\,$\mbox{]} Notes\+Manager.\+Get\+Lane\+Area\+Notes (
+\begin{DoxyParamCaption}
+\item[{int}]{lane\+No}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_notes_manager_ad0f90502e260178cf41ba3ec92cc3fcb}{}\label{class_notes_manager_ad0f90502e260178cf41ba3ec92cc3fcb}
+
+
+レーン内のノーツを返す 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lane\+No} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Notes\+Manager@{Notes\+Manager}!Set\+Active\+Time@{Set\+Active\+Time}}
+\index{Set\+Active\+Time@{Set\+Active\+Time}!Notes\+Manager@{Notes\+Manager}}
+\subsubsection[{\texorpdfstring{Set\+Active\+Time(float activate\+Time)}{SetActiveTime(float activateTime)}}]{\setlength{\rightskip}{0pt plus 5cm}void Notes\+Manager.\+Set\+Active\+Time (
+\begin{DoxyParamCaption}
+\item[{float}]{activate\+Time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_notes_manager_a525cac5533517b75264f0b01b86373d1}{}\label{class_notes_manager_a525cac5533517b75264f0b01b86373d1}
+
+
+ノーツのアクティブ時間 
+
+
+\begin{DoxyParams}{Parameters}
+{\em activate\+Time} & \\
+\hline
+\end{DoxyParams}
+\index{Notes\+Manager@{Notes\+Manager}!Set\+Judge\+Num@{Set\+Judge\+Num}}
+\index{Set\+Judge\+Num@{Set\+Judge\+Num}!Notes\+Manager@{Notes\+Manager}}
+\subsubsection[{\texorpdfstring{Set\+Judge\+Num(int num)}{SetJudgeNum(int num)}}]{\setlength{\rightskip}{0pt plus 5cm}void Notes\+Manager.\+Set\+Judge\+Num (
+\begin{DoxyParamCaption}
+\item[{int}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_notes_manager_a7be6fd1ad14c143595d4d566cba15442}{}\label{class_notes_manager_a7be6fd1ad14c143595d4d566cba15442}
+
+
+判定するノーツ数をセット ノーツ総数では長押しノーツは1個の扱いだが、 長押しノーツはヘッドとテイルの2個の判定のため判定数は別となる 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & \\
+\hline
+\end{DoxyParams}
+\index{Notes\+Manager@{Notes\+Manager}!Set\+Notes\+Num@{Set\+Notes\+Num}}
+\index{Set\+Notes\+Num@{Set\+Notes\+Num}!Notes\+Manager@{Notes\+Manager}}
+\subsubsection[{\texorpdfstring{Set\+Notes\+Num(int num)}{SetNotesNum(int num)}}]{\setlength{\rightskip}{0pt plus 5cm}void Notes\+Manager.\+Set\+Notes\+Num (
+\begin{DoxyParamCaption}
+\item[{int}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_notes_manager_afeb4ec920546b7cc061c50bf2c378f05}{}\label{class_notes_manager_afeb4ec920546b7cc061c50bf2c378f05}
+
+
+ノーツ総数をセット 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & \\
+\hline
+\end{DoxyParams}
+\index{Notes\+Manager@{Notes\+Manager}!Set\+Notes\+Speed@{Set\+Notes\+Speed}}
+\index{Set\+Notes\+Speed@{Set\+Notes\+Speed}!Notes\+Manager@{Notes\+Manager}}
+\subsubsection[{\texorpdfstring{Set\+Notes\+Speed(float speed)}{SetNotesSpeed(float speed)}}]{\setlength{\rightskip}{0pt plus 5cm}void Notes\+Manager.\+Set\+Notes\+Speed (
+\begin{DoxyParamCaption}
+\item[{float}]{speed}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_notes_manager_a5f5c4538a0d5e8e7cbd9951dddb718d5}{}\label{class_notes_manager_a5f5c4538a0d5e8e7cbd9951dddb718d5}
+
+
+ノーツの速度 
+
+
+\begin{DoxyParams}{Parameters}
+{\em speed} & \\
+\hline
+\end{DoxyParams}
+\index{Notes\+Manager@{Notes\+Manager}!update@{update}}
+\index{update@{update}!Notes\+Manager@{Notes\+Manager}}
+\subsubsection[{\texorpdfstring{update()}{update()}}]{\setlength{\rightskip}{0pt plus 5cm}void Notes\+Manager.\+update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_notes_manager_a6f4913237b8e3a4e68f5172f71e51590}{}\label{class_notes_manager_a6f4913237b8e3a4e68f5172f71e51590}
+
+
+更新 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scripts/\+Notes/Notes\+Manager.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,150 @@
+\hypertarget{class_touch_manager}{}\section{Touch\+Manager Class Reference}
+\label{class_touch_manager}\index{Touch\+Manager@{Touch\+Manager}}
+
+
+タッチマネージャー  
+
+
+Inheritance diagram for Touch\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_touch_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Vector2\mbox{[}$\,$\mbox{]} \hyperlink{class_touch_manager_a371933c19da690aa29afd51e26d3b75d}{Get\+Touch\+Pos} ()
+\begin{DoxyCompactList}\small\item\em phaseに関係なくタッチされている座標を全て返す ※ Editor上ではマウスの左クリックのみ \end{DoxyCompactList}\item 
+Vector2\mbox{[}$\,$\mbox{]} \hyperlink{class_touch_manager_a437d9f0a5edca24ce7d6ebea4a30ad9e}{Get\+Touch\+Began\+Pos} ()
+\begin{DoxyCompactList}\small\item\em タッチした瞬間の座標を返す \end{DoxyCompactList}\item 
+Vector2\mbox{[}$\,$\mbox{]} \hyperlink{class_touch_manager_af11c43ea9bc782327ad8ff5a4f151889}{Get\+Touch\+Moved\+Pos} ()
+\begin{DoxyCompactList}\small\item\em 指が動かされているものの座標を返す \end{DoxyCompactList}\item 
+Vector2\mbox{[}$\,$\mbox{]} \hyperlink{class_touch_manager_acdb18fa5fb6c7cc8a4ca06b3c52c53ab}{Get\+Touch\+Stationary\+Pos} ()
+\begin{DoxyCompactList}\small\item\em その場でタッチされているもの(指が動かされていないもの)の座標を返す \end{DoxyCompactList}\item 
+Vector2\mbox{[}$\,$\mbox{]} \hyperlink{class_touch_manager_aab5c384a916bb37c0a8c1c74f9e1b319}{Get\+Touch\+Ended\+Pos} ()
+\begin{DoxyCompactList}\small\item\em 指が離れたものの座標を返す \end{DoxyCompactList}\item 
+Vector2\mbox{[}$\,$\mbox{]} \hyperlink{class_touch_manager_a3cc9927c0c93ffc52e516b2322b06fb7}{Get\+Touch\+Canceled\+Pos} ()
+\begin{DoxyCompactList}\small\item\em システム的に処理できないものの座標を返す ・デバイスの許容出来る指の数以上で入力された場合 ・画面買いをタップされた場合 \end{DoxyCompactList}\item 
+Vector2\mbox{[}$\,$\mbox{]} \hyperlink{class_touch_manager_aaad8d2b9391c91f442cdabc9604670e8}{Get\+Touch\+Pos} (Touch\+Phase phase)
+\begin{DoxyCompactList}\small\item\em phaseに該当する座標を返す \end{DoxyCompactList}\item 
+bool {\bfseries Is\+Touch\+Area} (\hyperlink{class_touch_area_base}{Touch\+Area\+Base} touch\+Area)\hypertarget{class_touch_manager_aad4231928f165e0154cdc6d6fb1022a7}{}\label{class_touch_manager_aad4231928f165e0154cdc6d6fb1022a7}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+タッチマネージャー 
+
+
+
+\subsection{Member Function Documentation}
+\index{Touch\+Manager@{Touch\+Manager}!Get\+Touch\+Began\+Pos@{Get\+Touch\+Began\+Pos}}
+\index{Get\+Touch\+Began\+Pos@{Get\+Touch\+Began\+Pos}!Touch\+Manager@{Touch\+Manager}}
+\subsubsection[{\texorpdfstring{Get\+Touch\+Began\+Pos()}{GetTouchBeganPos()}}]{\setlength{\rightskip}{0pt plus 5cm}Vector2 \mbox{[}$\,$\mbox{]} Touch\+Manager.\+Get\+Touch\+Began\+Pos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_touch_manager_a437d9f0a5edca24ce7d6ebea4a30ad9e}{}\label{class_touch_manager_a437d9f0a5edca24ce7d6ebea4a30ad9e}
+
+
+タッチした瞬間の座標を返す 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Touch\+Manager@{Touch\+Manager}!Get\+Touch\+Canceled\+Pos@{Get\+Touch\+Canceled\+Pos}}
+\index{Get\+Touch\+Canceled\+Pos@{Get\+Touch\+Canceled\+Pos}!Touch\+Manager@{Touch\+Manager}}
+\subsubsection[{\texorpdfstring{Get\+Touch\+Canceled\+Pos()}{GetTouchCanceledPos()}}]{\setlength{\rightskip}{0pt plus 5cm}Vector2 \mbox{[}$\,$\mbox{]} Touch\+Manager.\+Get\+Touch\+Canceled\+Pos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_touch_manager_a3cc9927c0c93ffc52e516b2322b06fb7}{}\label{class_touch_manager_a3cc9927c0c93ffc52e516b2322b06fb7}
+
+
+システム的に処理できないものの座標を返す ・デバイスの許容出来る指の数以上で入力された場合 ・画面買いをタップされた場合 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Touch\+Manager@{Touch\+Manager}!Get\+Touch\+Ended\+Pos@{Get\+Touch\+Ended\+Pos}}
+\index{Get\+Touch\+Ended\+Pos@{Get\+Touch\+Ended\+Pos}!Touch\+Manager@{Touch\+Manager}}
+\subsubsection[{\texorpdfstring{Get\+Touch\+Ended\+Pos()}{GetTouchEndedPos()}}]{\setlength{\rightskip}{0pt plus 5cm}Vector2 \mbox{[}$\,$\mbox{]} Touch\+Manager.\+Get\+Touch\+Ended\+Pos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_touch_manager_aab5c384a916bb37c0a8c1c74f9e1b319}{}\label{class_touch_manager_aab5c384a916bb37c0a8c1c74f9e1b319}
+
+
+指が離れたものの座標を返す 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Touch\+Manager@{Touch\+Manager}!Get\+Touch\+Moved\+Pos@{Get\+Touch\+Moved\+Pos}}
+\index{Get\+Touch\+Moved\+Pos@{Get\+Touch\+Moved\+Pos}!Touch\+Manager@{Touch\+Manager}}
+\subsubsection[{\texorpdfstring{Get\+Touch\+Moved\+Pos()}{GetTouchMovedPos()}}]{\setlength{\rightskip}{0pt plus 5cm}Vector2 \mbox{[}$\,$\mbox{]} Touch\+Manager.\+Get\+Touch\+Moved\+Pos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_touch_manager_af11c43ea9bc782327ad8ff5a4f151889}{}\label{class_touch_manager_af11c43ea9bc782327ad8ff5a4f151889}
+
+
+指が動かされているものの座標を返す 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Touch\+Manager@{Touch\+Manager}!Get\+Touch\+Pos@{Get\+Touch\+Pos}}
+\index{Get\+Touch\+Pos@{Get\+Touch\+Pos}!Touch\+Manager@{Touch\+Manager}}
+\subsubsection[{\texorpdfstring{Get\+Touch\+Pos()}{GetTouchPos()}}]{\setlength{\rightskip}{0pt plus 5cm}Vector2 \mbox{[}$\,$\mbox{]} Touch\+Manager.\+Get\+Touch\+Pos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_touch_manager_a371933c19da690aa29afd51e26d3b75d}{}\label{class_touch_manager_a371933c19da690aa29afd51e26d3b75d}
+
+
+phaseに関係なくタッチされている座標を全て返す ※ Editor上ではマウスの左クリックのみ 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Touch\+Manager@{Touch\+Manager}!Get\+Touch\+Pos@{Get\+Touch\+Pos}}
+\index{Get\+Touch\+Pos@{Get\+Touch\+Pos}!Touch\+Manager@{Touch\+Manager}}
+\subsubsection[{\texorpdfstring{Get\+Touch\+Pos(\+Touch\+Phase phase)}{GetTouchPos(TouchPhase phase)}}]{\setlength{\rightskip}{0pt plus 5cm}Vector2 \mbox{[}$\,$\mbox{]} Touch\+Manager.\+Get\+Touch\+Pos (
+\begin{DoxyParamCaption}
+\item[{Touch\+Phase}]{phase}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_touch_manager_aaad8d2b9391c91f442cdabc9604670e8}{}\label{class_touch_manager_aaad8d2b9391c91f442cdabc9604670e8}
+
+
+phaseに該当する座標を返す 
+
+
+\begin{DoxyParams}{Parameters}
+{\em phase} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Touch\+Manager@{Touch\+Manager}!Get\+Touch\+Stationary\+Pos@{Get\+Touch\+Stationary\+Pos}}
+\index{Get\+Touch\+Stationary\+Pos@{Get\+Touch\+Stationary\+Pos}!Touch\+Manager@{Touch\+Manager}}
+\subsubsection[{\texorpdfstring{Get\+Touch\+Stationary\+Pos()}{GetTouchStationaryPos()}}]{\setlength{\rightskip}{0pt plus 5cm}Vector2 \mbox{[}$\,$\mbox{]} Touch\+Manager.\+Get\+Touch\+Stationary\+Pos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_touch_manager_acdb18fa5fb6c7cc8a4ca06b3c52c53ab}{}\label{class_touch_manager_acdb18fa5fb6c7cc8a4ca06b3c52c53ab}
+
+
+その場でタッチされているもの(指が動かされていないもの)の座標を返す 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scripts/\+Touch/Touch\+Manager.\+cs\end{DoxyCompactItemize}

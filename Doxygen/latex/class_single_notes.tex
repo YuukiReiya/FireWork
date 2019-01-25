@@ -1,0 +1,142 @@
+\hypertarget{class_single_notes}{}\section{Single\+Notes Class Reference}
+\label{class_single_notes}\index{Single\+Notes@{Single\+Notes}}
+
+
+単発ノーツ  
+
+
+Inheritance diagram for Single\+Notes\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_single_notes}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void {\bfseries Init} (int lane\+No, float down, float up)\hypertarget{class_single_notes_a06743f4372325fb1445d62eadc690446}{}\label{class_single_notes_a06743f4372325fb1445d62eadc690446}
+
+\item 
+override void \hyperlink{class_single_notes_ad845bd14668226c2edab7cc3aff1c575}{Move} ()
+\begin{DoxyCompactList}\small\item\em ノーツの移動 \end{DoxyCompactList}\item 
+void \hyperlink{class_single_notes_ac73c660a04161571760a41461ea7cf8b}{On\+Touch\+Down} ()
+\begin{DoxyCompactList}\small\item\em 押したときの処理 \end{DoxyCompactList}\item 
+void \hyperlink{class_single_notes_a1ac048470c51a39aae1aa48e1c2ab7fb}{Seed\+Fx\+Control} (float timming)
+\begin{DoxyCompactList}\small\item\em 種火エフェクトの制御 \end{DoxyCompactList}\item 
+override void \hyperlink{class_single_notes_a0ad7fbf218ce275691c094c42bda1103}{Miss} ()
+\begin{DoxyCompactList}\small\item\em 失敗処理 \end{DoxyCompactList}\item 
+override void \hyperlink{class_single_notes_a5e0ca4a12debb4cf39b7e4e24e0e0f7b}{Rec\+Init} (int lane\+No, float down, float up)
+\begin{DoxyCompactList}\small\item\em 録画シーンの初期化 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int {\bfseries ID} = 1\hypertarget{class_single_notes_ae0a33c1331d84f08785264179546422e}{}\label{class_single_notes_ae0a33c1331d84f08785264179546422e}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+override bool \hyperlink{class_single_notes_ad8575a29920cd51c2f96a666f2ab18e0}{is\+Reset}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em リセットフラグ \end{DoxyCompactList}\item 
+override bool \hyperlink{class_single_notes_a4d6232399afbade1d1f3c7cbcb1f9b35}{is\+Miss}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em ミスフラグ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+単発ノーツ 
+
+
+
+\subsection{Member Function Documentation}
+\index{Single\+Notes@{Single\+Notes}!Miss@{Miss}}
+\index{Miss@{Miss}!Single\+Notes@{Single\+Notes}}
+\subsubsection[{\texorpdfstring{Miss()}{Miss()}}]{\setlength{\rightskip}{0pt plus 5cm}override void Single\+Notes.\+Miss (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{class_single_notes_a0ad7fbf218ce275691c094c42bda1103}{}\label{class_single_notes_a0ad7fbf218ce275691c094c42bda1103}
+
+
+失敗処理 
+
+
+
+Reimplemented from \hyperlink{class_notes_base}{Notes\+Base}.
+
+\index{Single\+Notes@{Single\+Notes}!Move@{Move}}
+\index{Move@{Move}!Single\+Notes@{Single\+Notes}}
+\subsubsection[{\texorpdfstring{Move()}{Move()}}]{\setlength{\rightskip}{0pt plus 5cm}override void Single\+Notes.\+Move (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{class_single_notes_ad845bd14668226c2edab7cc3aff1c575}{}\label{class_single_notes_ad845bd14668226c2edab7cc3aff1c575}
+
+
+ノーツの移動 
+
+
+
+Reimplemented from \hyperlink{class_notes_base}{Notes\+Base}.
+
+\index{Single\+Notes@{Single\+Notes}!On\+Touch\+Down@{On\+Touch\+Down}}
+\index{On\+Touch\+Down@{On\+Touch\+Down}!Single\+Notes@{Single\+Notes}}
+\subsubsection[{\texorpdfstring{On\+Touch\+Down()}{OnTouchDown()}}]{\setlength{\rightskip}{0pt plus 5cm}void Single\+Notes.\+On\+Touch\+Down (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_single_notes_ac73c660a04161571760a41461ea7cf8b}{}\label{class_single_notes_ac73c660a04161571760a41461ea7cf8b}
+
+
+押したときの処理 
+
+\index{Single\+Notes@{Single\+Notes}!Rec\+Init@{Rec\+Init}}
+\index{Rec\+Init@{Rec\+Init}!Single\+Notes@{Single\+Notes}}
+\subsubsection[{\texorpdfstring{Rec\+Init(int lane\+No, float down, float up)}{RecInit(int laneNo, float down, float up)}}]{\setlength{\rightskip}{0pt plus 5cm}override void Single\+Notes.\+Rec\+Init (
+\begin{DoxyParamCaption}
+\item[{int}]{lane\+No, }
+\item[{float}]{down, }
+\item[{float}]{up}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{class_single_notes_a5e0ca4a12debb4cf39b7e4e24e0e0f7b}{}\label{class_single_notes_a5e0ca4a12debb4cf39b7e4e24e0e0f7b}
+
+
+録画シーンの初期化 
+
+
+
+Reimplemented from \hyperlink{class_notes_base}{Notes\+Base}.
+
+\index{Single\+Notes@{Single\+Notes}!Seed\+Fx\+Control@{Seed\+Fx\+Control}}
+\index{Seed\+Fx\+Control@{Seed\+Fx\+Control}!Single\+Notes@{Single\+Notes}}
+\subsubsection[{\texorpdfstring{Seed\+Fx\+Control(float timming)}{SeedFxControl(float timming)}}]{\setlength{\rightskip}{0pt plus 5cm}void Single\+Notes.\+Seed\+Fx\+Control (
+\begin{DoxyParamCaption}
+\item[{float}]{timming}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_single_notes_a1ac048470c51a39aae1aa48e1c2ab7fb}{}\label{class_single_notes_a1ac048470c51a39aae1aa48e1c2ab7fb}
+
+
+種火エフェクトの制御 
+
+
+
+\subsection{Property Documentation}
+\index{Single\+Notes@{Single\+Notes}!is\+Miss@{is\+Miss}}
+\index{is\+Miss@{is\+Miss}!Single\+Notes@{Single\+Notes}}
+\subsubsection[{\texorpdfstring{is\+Miss}{isMiss}}]{\setlength{\rightskip}{0pt plus 5cm}override bool Single\+Notes.\+is\+Miss\hspace{0.3cm}{\ttfamily [get]}}\hypertarget{class_single_notes_a4d6232399afbade1d1f3c7cbcb1f9b35}{}\label{class_single_notes_a4d6232399afbade1d1f3c7cbcb1f9b35}
+
+
+ミスフラグ 
+
+\index{Single\+Notes@{Single\+Notes}!is\+Reset@{is\+Reset}}
+\index{is\+Reset@{is\+Reset}!Single\+Notes@{Single\+Notes}}
+\subsubsection[{\texorpdfstring{is\+Reset}{isReset}}]{\setlength{\rightskip}{0pt plus 5cm}override bool Single\+Notes.\+is\+Reset\hspace{0.3cm}{\ttfamily [get]}}\hypertarget{class_single_notes_ad8575a29920cd51c2f96a666f2ab18e0}{}\label{class_single_notes_ad8575a29920cd51c2f96a666f2ab18e0}
+
+
+リセットフラグ 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scripts/\+Notes/Single\+Notes.\+cs\end{DoxyCompactItemize}

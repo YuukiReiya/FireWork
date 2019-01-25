@@ -1,0 +1,186 @@
+\hypertarget{class_touch_area_box}{}\section{Touch\+Area\+Box Class Reference}
+\label{class_touch_area_box}\index{Touch\+Area\+Box@{Touch\+Area\+Box}}
+Inheritance diagram for Touch\+Area\+Box\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_touch_area_box}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_touch_area_box_a148bf35f6965313f81ba2428e880d165}{Set\+Size} (Vector2 size)
+\begin{DoxyCompactList}\small\item\em サイズのセッター \end{DoxyCompactList}\item 
+void \hyperlink{class_touch_area_box_aecbf2351ec00a8848239379ddde42ce3}{Create\+Vertices} ()
+\begin{DoxyCompactList}\small\item\em 矩形を構成する4頂点を生成 \end{DoxyCompactList}\item 
+bool \hyperlink{class_touch_area_box_aecdfd8d0e4d80a9fb445585980386ddd}{Is\+Touch\+World\+To\+Screen} (Vector2 screen\+Pos)
+\begin{DoxyCompactList}\small\item\em 当たり判定をワールド座標からスクリーン座標へ変換し、 スクリーン座標上で、この矩形と当たり判定を行う \end{DoxyCompactList}\item 
+bool \hyperlink{class_touch_area_box_ab10b28047e2b6af57bac77cac9d90395}{Is\+Touch} ()
+\begin{DoxyCompactList}\small\item\em タッチされているかどうか 1本でも触れていればtrueを返す \end{DoxyCompactList}\item 
+bool \hyperlink{class_touch_area_box_a0fcd9e196147940919c844c0c4a1fb32}{Is\+Touch\+Began} ()
+\begin{DoxyCompactList}\small\item\em タッチされた瞬間の当たり判定 1本でも存在すればtrue \end{DoxyCompactList}\item 
+bool \hyperlink{class_touch_area_box_aeeb055b71f5e4cb776f2638bdebd77dd}{Is\+Touch\+End} ()
+\begin{DoxyCompactList}\small\item\em タッチが離された瞬間の当たり判定 1本でも存在すればtrue \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_touch_area_box_a5905a11595e6007eaf06308f832cafe4}{Set\+Transform\+Data} ()
+\begin{DoxyCompactList}\small\item\em Transformの値から自身の\+Parameterを設定する \end{DoxyCompactList}\item 
+override void \hyperlink{class_touch_area_box_a3ee37c987ffa5e7e23d75736e7a46483}{Reset} ()
+\begin{DoxyCompactList}\small\item\em リセット時の処理 \end{DoxyCompactList}\item 
+override void \hyperlink{class_touch_area_box_ad8e11cacc1d3089309346c13da4f2a88}{On\+Draw\+Gizmos} ()
+\begin{DoxyCompactList}\small\item\em ギズモ表示 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Vector2 {\bfseries Size}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{class_touch_area_box_a237928de17bd48a0e0c5c63bdf5eeb15}{}\label{class_touch_area_box_a237928de17bd48a0e0c5c63bdf5eeb15}
+
+\item 
+float {\bfseries Angle}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{class_touch_area_box_adea1cfbb523a9e251efd9fcca9392441}{}\label{class_touch_area_box_adea1cfbb523a9e251efd9fcca9392441}
+
+\item 
+override bool {\bfseries is\+Touch}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{class_touch_area_box_a883b8e1eba2bc852d71708d678cc46d3}{}\label{class_touch_area_box_a883b8e1eba2bc852d71708d678cc46d3}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{Touch\+Area\+Box@{Touch\+Area\+Box}!Create\+Vertices@{Create\+Vertices}}
+\index{Create\+Vertices@{Create\+Vertices}!Touch\+Area\+Box@{Touch\+Area\+Box}}
+\subsubsection[{\texorpdfstring{Create\+Vertices()}{CreateVertices()}}]{\setlength{\rightskip}{0pt plus 5cm}void Touch\+Area\+Box.\+Create\+Vertices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_touch_area_box_aecbf2351ec00a8848239379ddde42ce3}{}\label{class_touch_area_box_aecbf2351ec00a8848239379ddde42ce3}
+
+
+矩形を構成する4頂点を生成 
+
+\index{Touch\+Area\+Box@{Touch\+Area\+Box}!Is\+Touch@{Is\+Touch}}
+\index{Is\+Touch@{Is\+Touch}!Touch\+Area\+Box@{Touch\+Area\+Box}}
+\subsubsection[{\texorpdfstring{Is\+Touch()}{IsTouch()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Touch\+Area\+Box.\+Is\+Touch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_touch_area_box_ab10b28047e2b6af57bac77cac9d90395}{}\label{class_touch_area_box_ab10b28047e2b6af57bac77cac9d90395}
+
+
+タッチされているかどうか 1本でも触れていればtrueを返す 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Touch\+Area\+Box@{Touch\+Area\+Box}!Is\+Touch\+Began@{Is\+Touch\+Began}}
+\index{Is\+Touch\+Began@{Is\+Touch\+Began}!Touch\+Area\+Box@{Touch\+Area\+Box}}
+\subsubsection[{\texorpdfstring{Is\+Touch\+Began()}{IsTouchBegan()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Touch\+Area\+Box.\+Is\+Touch\+Began (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_touch_area_box_a0fcd9e196147940919c844c0c4a1fb32}{}\label{class_touch_area_box_a0fcd9e196147940919c844c0c4a1fb32}
+
+
+タッチされた瞬間の当たり判定 1本でも存在すればtrue 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Touch\+Area\+Box@{Touch\+Area\+Box}!Is\+Touch\+End@{Is\+Touch\+End}}
+\index{Is\+Touch\+End@{Is\+Touch\+End}!Touch\+Area\+Box@{Touch\+Area\+Box}}
+\subsubsection[{\texorpdfstring{Is\+Touch\+End()}{IsTouchEnd()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Touch\+Area\+Box.\+Is\+Touch\+End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_touch_area_box_aeeb055b71f5e4cb776f2638bdebd77dd}{}\label{class_touch_area_box_aeeb055b71f5e4cb776f2638bdebd77dd}
+
+
+タッチが離された瞬間の当たり判定 1本でも存在すればtrue 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Touch\+Area\+Box@{Touch\+Area\+Box}!Is\+Touch\+World\+To\+Screen@{Is\+Touch\+World\+To\+Screen}}
+\index{Is\+Touch\+World\+To\+Screen@{Is\+Touch\+World\+To\+Screen}!Touch\+Area\+Box@{Touch\+Area\+Box}}
+\subsubsection[{\texorpdfstring{Is\+Touch\+World\+To\+Screen(\+Vector2 screen\+Pos)}{IsTouchWorldToScreen(Vector2 screenPos)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Touch\+Area\+Box.\+Is\+Touch\+World\+To\+Screen (
+\begin{DoxyParamCaption}
+\item[{Vector2}]{screen\+Pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_touch_area_box_aecdfd8d0e4d80a9fb445585980386ddd}{}\label{class_touch_area_box_aecdfd8d0e4d80a9fb445585980386ddd}
+
+
+当たり判定をワールド座標からスクリーン座標へ変換し、 スクリーン座標上で、この矩形と当たり判定を行う 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen\+Pos} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Touch\+Area\+Box@{Touch\+Area\+Box}!On\+Draw\+Gizmos@{On\+Draw\+Gizmos}}
+\index{On\+Draw\+Gizmos@{On\+Draw\+Gizmos}!Touch\+Area\+Box@{Touch\+Area\+Box}}
+\subsubsection[{\texorpdfstring{On\+Draw\+Gizmos()}{OnDrawGizmos()}}]{\setlength{\rightskip}{0pt plus 5cm}override void Touch\+Area\+Box.\+On\+Draw\+Gizmos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_touch_area_box_ad8e11cacc1d3089309346c13da4f2a88}{}\label{class_touch_area_box_ad8e11cacc1d3089309346c13da4f2a88}
+
+
+ギズモ表示 
+
+
+
+Reimplemented from \hyperlink{class_touch_area_base_a775cebdb39ddba5717a89f8ff8d1c810}{Touch\+Area\+Base}.
+
+\index{Touch\+Area\+Box@{Touch\+Area\+Box}!Reset@{Reset}}
+\index{Reset@{Reset}!Touch\+Area\+Box@{Touch\+Area\+Box}}
+\subsubsection[{\texorpdfstring{Reset()}{Reset()}}]{\setlength{\rightskip}{0pt plus 5cm}override void Touch\+Area\+Box.\+Reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_touch_area_box_a3ee37c987ffa5e7e23d75736e7a46483}{}\label{class_touch_area_box_a3ee37c987ffa5e7e23d75736e7a46483}
+
+
+リセット時の処理 
+
+
+
+Reimplemented from \hyperlink{class_touch_area_base_a94f9466d4f70a449055e72b86d23378c}{Touch\+Area\+Base}.
+
+\index{Touch\+Area\+Box@{Touch\+Area\+Box}!Set\+Size@{Set\+Size}}
+\index{Set\+Size@{Set\+Size}!Touch\+Area\+Box@{Touch\+Area\+Box}}
+\subsubsection[{\texorpdfstring{Set\+Size(\+Vector2 size)}{SetSize(Vector2 size)}}]{\setlength{\rightskip}{0pt plus 5cm}void Touch\+Area\+Box.\+Set\+Size (
+\begin{DoxyParamCaption}
+\item[{Vector2}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_touch_area_box_a148bf35f6965313f81ba2428e880d165}{}\label{class_touch_area_box_a148bf35f6965313f81ba2428e880d165}
+
+
+サイズのセッター 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & \\
+\hline
+\end{DoxyParams}
+\index{Touch\+Area\+Box@{Touch\+Area\+Box}!Set\+Transform\+Data@{Set\+Transform\+Data}}
+\index{Set\+Transform\+Data@{Set\+Transform\+Data}!Touch\+Area\+Box@{Touch\+Area\+Box}}
+\subsubsection[{\texorpdfstring{Set\+Transform\+Data()}{SetTransformData()}}]{\setlength{\rightskip}{0pt plus 5cm}override void Touch\+Area\+Box.\+Set\+Transform\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_touch_area_box_a5905a11595e6007eaf06308f832cafe4}{}\label{class_touch_area_box_a5905a11595e6007eaf06308f832cafe4}
+
+
+Transformの値から自身の\+Parameterを設定する 
+
+
+
+Reimplemented from \hyperlink{class_touch_area_base_a9d4d8709065668bea45eecf59c41401b}{Touch\+Area\+Base}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scripts/\+Touch/Touch\+Area\+Box.\+cs\end{DoxyCompactItemize}

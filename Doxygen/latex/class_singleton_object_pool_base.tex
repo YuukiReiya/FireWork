@@ -1,0 +1,114 @@
+\hypertarget{class_singleton_object_pool_base}{}\section{Singleton\+Object\+Pool\+Base$<$ T $>$ Class Template Reference}
+\label{class_singleton_object_pool_base}\index{Singleton\+Object\+Pool\+Base$<$ T $>$@{Singleton\+Object\+Pool\+Base$<$ T $>$}}
+
+
+ 
+
+
+Inheritance diagram for Singleton\+Object\+Pool\+Base$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_singleton_object_pool_base}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_singleton_object_pool_base_ac7911635f1fff2562f4e0fe260f8addb}{Initialize} ()
+\begin{DoxyCompactList}\small\item\em 初期化 (ここではプール生成後に\+Set\+Active(false)を呼び出している) \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_singleton_object_pool_base_a243b2d0a5b80b5b2e479dc2c5beeb079}{Renewal} ()
+\begin{DoxyCompactList}\small\item\em リストを新しくする \end{DoxyCompactList}\item 
+virtual Game\+Object \hyperlink{class_singleton_object_pool_base_a1957d69d05289232b43cb8e24a1bc648}{Get\+Object} ()
+\begin{DoxyCompactList}\small\item\em プールオブジェクトの取得 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_singleton_object_pool_base_a31f837eb2f5bafd9e7b3b275f39329a6}{Create\+Pool} ()
+\begin{DoxyCompactList}\small\item\em プールの生成 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object {\bfseries pool\+Object}\hypertarget{class_singleton_object_pool_base_a2a95e2e9ebbee11165f3f13b31b866ec}{}\label{class_singleton_object_pool_base_a2a95e2e9ebbee11165f3f13b31b866ec}
+
+\item 
+int {\bfseries pool\+Num}\hypertarget{class_singleton_object_pool_base_a876763d012019bbd0beee30e65df03af}{}\label{class_singleton_object_pool_base_a876763d012019bbd0beee30e65df03af}
+
+\item 
+List$<$ Game\+Object $>$ {\bfseries pool\+List}\hypertarget{class_singleton_object_pool_base_a877383a71dc7b4327c5462e7d5807ded}{}\label{class_singleton_object_pool_base_a877383a71dc7b4327c5462e7d5807ded}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static T {\bfseries Instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{class_singleton_object_pool_base_ab906d15c93813acbd1ac4f58da2c9b6a}{}\label{class_singleton_object_pool_base_ab906d15c93813acbd1ac4f58da2c9b6a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Mono\+Behaviour}]\end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\index{Singleton\+Object\+Pool\+Base@{Singleton\+Object\+Pool\+Base}!Create\+Pool@{Create\+Pool}}
+\index{Create\+Pool@{Create\+Pool}!Singleton\+Object\+Pool\+Base@{Singleton\+Object\+Pool\+Base}}
+\subsubsection[{\texorpdfstring{Create\+Pool()}{CreatePool()}}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Singleton\+Object\+Pool\+Base}$<$ T $>$.Create\+Pool (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{class_singleton_object_pool_base_a31f837eb2f5bafd9e7b3b275f39329a6}{}\label{class_singleton_object_pool_base_a31f837eb2f5bafd9e7b3b275f39329a6}
+
+
+プールの生成 
+
+\index{Singleton\+Object\+Pool\+Base@{Singleton\+Object\+Pool\+Base}!Get\+Object@{Get\+Object}}
+\index{Get\+Object@{Get\+Object}!Singleton\+Object\+Pool\+Base@{Singleton\+Object\+Pool\+Base}}
+\subsubsection[{\texorpdfstring{Get\+Object()}{GetObject()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Game\+Object {\bf Singleton\+Object\+Pool\+Base}$<$ T $>$.Get\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{class_singleton_object_pool_base_a1957d69d05289232b43cb8e24a1bc648}{}\label{class_singleton_object_pool_base_a1957d69d05289232b43cb8e24a1bc648}
+
+
+プールオブジェクトの取得 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Singleton\+Object\+Pool\+Base@{Singleton\+Object\+Pool\+Base}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Singleton\+Object\+Pool\+Base@{Singleton\+Object\+Pool\+Base}}
+\subsubsection[{\texorpdfstring{Initialize()}{Initialize()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf Singleton\+Object\+Pool\+Base}$<$ T $>$.Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{class_singleton_object_pool_base_ac7911635f1fff2562f4e0fe260f8addb}{}\label{class_singleton_object_pool_base_ac7911635f1fff2562f4e0fe260f8addb}
+
+
+初期化 (ここではプール生成後に\+Set\+Active(false)を呼び出している) 
+
+\index{Singleton\+Object\+Pool\+Base@{Singleton\+Object\+Pool\+Base}!Renewal@{Renewal}}
+\index{Renewal@{Renewal}!Singleton\+Object\+Pool\+Base@{Singleton\+Object\+Pool\+Base}}
+\subsubsection[{\texorpdfstring{Renewal()}{Renewal()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf Singleton\+Object\+Pool\+Base}$<$ T $>$.Renewal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{class_singleton_object_pool_base_a243b2d0a5b80b5b2e479dc2c5beeb079}{}\label{class_singleton_object_pool_base_a243b2d0a5b80b5b2e479dc2c5beeb079}
+
+
+リストを新しくする 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scripts/\+Base/Singleton\+Object\+Pool\+Base.\+cs\end{DoxyCompactItemize}

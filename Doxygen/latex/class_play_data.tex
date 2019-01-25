@@ -1,0 +1,287 @@
+\hypertarget{class_play_data}{}\section{Play\+Data Class Reference}
+\label{class_play_data}\index{Play\+Data@{Play\+Data}}
+
+
+楽曲プレイするにあたって保存しておかないといけないデータ群  
+
+
+Inheritance diagram for Play\+Data\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_play_data}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Level} \{ {\bfseries Easy}, 
+{\bfseries Normal}, 
+{\bfseries Hard}
+ \}\hypertarget{class_play_data_a3561a38cd6b282fd2f39b0e0c458c032}{}\label{class_play_data_a3561a38cd6b282fd2f39b0e0c458c032}
+
+\item 
+enum {\bfseries Speed} \{ \\*
+{\bfseries O\+NE} = 1, 
+{\bfseries T\+WO}, 
+{\bfseries T\+H\+R\+EE}, 
+{\bfseries F\+O\+UR}, 
+\\*
+{\bfseries F\+I\+VE}, 
+{\bfseries S\+IX}, 
+{\bfseries S\+E\+V\+EN}, 
+{\bfseries E\+I\+G\+HT}, 
+\\*
+{\bfseries N\+I\+NE}, 
+{\bfseries T\+EN}
+ \}\hypertarget{class_play_data_a5273921272a1cf4ea28646ea538b48f4}{}\label{class_play_data_a5273921272a1cf4ea28646ea538b48f4}
+
+\item 
+enum {\bfseries Volume} \{ \\*
+{\bfseries Z\+E\+RO}, 
+{\bfseries O\+NE}, 
+{\bfseries T\+WO}, 
+{\bfseries T\+H\+R\+EE}, 
+\\*
+{\bfseries F\+O\+UR}, 
+{\bfseries F\+I\+VE}, 
+{\bfseries S\+IX}, 
+{\bfseries S\+E\+V\+EN}, 
+\\*
+{\bfseries E\+I\+G\+HT}, 
+{\bfseries N\+I\+NE}, 
+{\bfseries T\+EN}
+ \}\hypertarget{class_play_data_a879920467d76bd3a858c9c2025e98659}{}\label{class_play_data_a879920467d76bd3a858c9c2025e98659}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_play_data_a67575e29933665c60e5f60135875bb69}{Set\+Level} (Level level)
+\begin{DoxyCompactList}\small\item\em 難易度の設定 \end{DoxyCompactList}\item 
+void \hyperlink{class_play_data_a3840f7faaa54b86ff3ec207ef85b7033}{Reset\+Data} ()
+\begin{DoxyCompactList}\small\item\em データのリセット \end{DoxyCompactList}\item 
+void \hyperlink{class_play_data_af935b9627b1aed55166d3b67433d1c04}{Add\+Speed} ()
+\begin{DoxyCompactList}\small\item\em 速度上昇 \end{DoxyCompactList}\item 
+void \hyperlink{class_play_data_a3daf8700808d898b695b4394d5086113}{Add\+S\+E\+Volume} ()
+\begin{DoxyCompactList}\small\item\em S\+Eの音量の上昇 \end{DoxyCompactList}\item 
+void \hyperlink{class_play_data_a22fd27b0cd3c566ceb2383db1ff01583}{Add\+B\+G\+M\+Volume} ()
+\begin{DoxyCompactList}\small\item\em B\+G\+Mの音量の上昇 \end{DoxyCompactList}\item 
+void \hyperlink{class_play_data_a3aaf96876ca0992bc7170d81725de4dc}{Less\+Speed} ()
+\begin{DoxyCompactList}\small\item\em 速度減少 \end{DoxyCompactList}\item 
+void \hyperlink{class_play_data_afa4ccf849600e4cd54da901338f537af}{Less\+S\+E\+Volume} ()
+\begin{DoxyCompactList}\small\item\em S\+Eの音量の減少 \end{DoxyCompactList}\item 
+void \hyperlink{class_play_data_a74919d0b214b27b6f99f6f12ae45e288}{Less\+B\+G\+M\+Volume} ()
+\begin{DoxyCompactList}\small\item\em B\+G\+Mの音量の減少 \end{DoxyCompactList}\item 
+void \hyperlink{class_play_data_af321c45a332a001cf564dc34fbf6d200}{Set\+Play\+Data} ()
+\begin{DoxyCompactList}\small\item\em プレイデータ(ノーツスピード、プール数、プールタイム)のセット \end{DoxyCompactList}\item 
+I\+Enumerator \hyperlink{class_play_data_a7af0781e257708ef6ee6a02eb56984c4}{Load\+System\+Data} ()
+\begin{DoxyCompactList}\small\item\em システムデータの読み込み \end{DoxyCompactList}\item 
+void {\bfseries Write\+System\+Data} ()\hypertarget{class_play_data_a86f121114610b5e2fe2b580a737aae69}{}\label{class_play_data_a86f121114610b5e2fe2b580a737aae69}
+
+\item 
+void \hyperlink{class_play_data_a6bc6a5c0b10fe2b7089b4ee043f42c89}{Write\+System\+Data} (float se\+Vol, float bgm\+Vol, Speed speed)
+\begin{DoxyCompactList}\small\item\em システムデータの書き込み 既にデータがあるはずなのですでにあるものはいったん削除する \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const Speed {\bfseries M\+A\+X\+\_\+\+S\+P\+E\+ED} = Speed.\+T\+EN\hypertarget{class_play_data_ad26af255954f87a3e38714c4c52e883b}{}\label{class_play_data_ad26af255954f87a3e38714c4c52e883b}
+
+\item 
+const Speed {\bfseries M\+I\+N\+\_\+\+S\+P\+E\+ED} = Speed.\+O\+NE\hypertarget{class_play_data_a59d69a6f1920500d17c31929668d039a}{}\label{class_play_data_a59d69a6f1920500d17c31929668d039a}
+
+\item 
+const Volume {\bfseries M\+A\+X\+\_\+\+V\+O\+L\+U\+ME} = Volume.\+T\+EN\hypertarget{class_play_data_ab6ae016cf4a9eb1c28c37405eeb7d2f5}{}\label{class_play_data_ab6ae016cf4a9eb1c28c37405eeb7d2f5}
+
+\item 
+const Volume {\bfseries M\+I\+N\+\_\+\+V\+O\+L\+U\+ME} = Volume.\+Z\+E\+RO\hypertarget{class_play_data_a924b81bf46539693eeff9a9776871b09}{}\label{class_play_data_a924b81bf46539693eeff9a9776871b09}
+
+\item 
+const string {\bfseries System\+Path} = \char`\"{}system.\+ini\char`\"{}\hypertarget{class_play_data_aec36a92cc8887da39f8152b22419160c}{}\label{class_play_data_aec36a92cc8887da39f8152b22419160c}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Level {\bfseries level}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{class_play_data_a87e4d5b2a29d3078721c3b12c9247f20}{}\label{class_play_data_a87e4d5b2a29d3078721c3b12c9247f20}
+
+\item 
+Speed {\bfseries speed}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{class_play_data_acf07fcdd3d91262ed31b68cbf0327899}{}\label{class_play_data_acf07fcdd3d91262ed31b68cbf0327899}
+
+\item 
+float {\bfseries notes\+Speed}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{class_play_data_a20f638eaa95e6f7a41a318bc21e1023c}{}\label{class_play_data_a20f638eaa95e6f7a41a318bc21e1023c}
+
+\item 
+Volume {\bfseries S\+E\+Vol}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{class_play_data_aca9ae040610b815c9047f8d621619cd8}{}\label{class_play_data_aca9ae040610b815c9047f8d621619cd8}
+
+\item 
+Volume {\bfseries B\+G\+M\+Vol}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{class_play_data_a5e369ebd76206ba182b9836d57d60518}{}\label{class_play_data_a5e369ebd76206ba182b9836d57d60518}
+
+\item 
+float {\bfseries S\+E\+Vol\+Value}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{class_play_data_ae2efe6ff299c518d181ce04ce7cd9765}{}\label{class_play_data_ae2efe6ff299c518d181ce04ce7cd9765}
+
+\item 
+float {\bfseries B\+G\+M\+Vol\+Value}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{class_play_data_a5fe9593b45154a8ca1862c7d91f2915a}{}\label{class_play_data_a5fe9593b45154a8ca1862c7d91f2915a}
+
+\item 
+float {\bfseries Notes\+Active\+Time}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{class_play_data_a8665728805d4db8a7726a6c70633a8ef}{}\label{class_play_data_a8665728805d4db8a7726a6c70633a8ef}
+
+\item 
+int {\bfseries simple\+Notes\+Pool\+Num}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{class_play_data_a0c0e8f086a8a02aeaad6c404a239368f}{}\label{class_play_data_a0c0e8f086a8a02aeaad6c404a239368f}
+
+\item 
+string {\bfseries file\+Path}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{class_play_data_ad5bbccf74a246e45fcdc89fac9c093b0}{}\label{class_play_data_ad5bbccf74a246e45fcdc89fac9c093b0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+楽曲プレイするにあたって保存しておかないといけないデータ群 
+
+
+
+\subsection{Member Function Documentation}
+\index{Play\+Data@{Play\+Data}!Add\+B\+G\+M\+Volume@{Add\+B\+G\+M\+Volume}}
+\index{Add\+B\+G\+M\+Volume@{Add\+B\+G\+M\+Volume}!Play\+Data@{Play\+Data}}
+\subsubsection[{\texorpdfstring{Add\+B\+G\+M\+Volume()}{AddBGMVolume()}}]{\setlength{\rightskip}{0pt plus 5cm}void Play\+Data.\+Add\+B\+G\+M\+Volume (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_play_data_a22fd27b0cd3c566ceb2383db1ff01583}{}\label{class_play_data_a22fd27b0cd3c566ceb2383db1ff01583}
+
+
+B\+G\+Mの音量の上昇 
+
+\index{Play\+Data@{Play\+Data}!Add\+S\+E\+Volume@{Add\+S\+E\+Volume}}
+\index{Add\+S\+E\+Volume@{Add\+S\+E\+Volume}!Play\+Data@{Play\+Data}}
+\subsubsection[{\texorpdfstring{Add\+S\+E\+Volume()}{AddSEVolume()}}]{\setlength{\rightskip}{0pt plus 5cm}void Play\+Data.\+Add\+S\+E\+Volume (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_play_data_a3daf8700808d898b695b4394d5086113}{}\label{class_play_data_a3daf8700808d898b695b4394d5086113}
+
+
+S\+Eの音量の上昇 
+
+\index{Play\+Data@{Play\+Data}!Add\+Speed@{Add\+Speed}}
+\index{Add\+Speed@{Add\+Speed}!Play\+Data@{Play\+Data}}
+\subsubsection[{\texorpdfstring{Add\+Speed()}{AddSpeed()}}]{\setlength{\rightskip}{0pt plus 5cm}void Play\+Data.\+Add\+Speed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_play_data_af935b9627b1aed55166d3b67433d1c04}{}\label{class_play_data_af935b9627b1aed55166d3b67433d1c04}
+
+
+速度上昇 
+
+\index{Play\+Data@{Play\+Data}!Less\+B\+G\+M\+Volume@{Less\+B\+G\+M\+Volume}}
+\index{Less\+B\+G\+M\+Volume@{Less\+B\+G\+M\+Volume}!Play\+Data@{Play\+Data}}
+\subsubsection[{\texorpdfstring{Less\+B\+G\+M\+Volume()}{LessBGMVolume()}}]{\setlength{\rightskip}{0pt plus 5cm}void Play\+Data.\+Less\+B\+G\+M\+Volume (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_play_data_a74919d0b214b27b6f99f6f12ae45e288}{}\label{class_play_data_a74919d0b214b27b6f99f6f12ae45e288}
+
+
+B\+G\+Mの音量の減少 
+
+\index{Play\+Data@{Play\+Data}!Less\+S\+E\+Volume@{Less\+S\+E\+Volume}}
+\index{Less\+S\+E\+Volume@{Less\+S\+E\+Volume}!Play\+Data@{Play\+Data}}
+\subsubsection[{\texorpdfstring{Less\+S\+E\+Volume()}{LessSEVolume()}}]{\setlength{\rightskip}{0pt plus 5cm}void Play\+Data.\+Less\+S\+E\+Volume (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_play_data_afa4ccf849600e4cd54da901338f537af}{}\label{class_play_data_afa4ccf849600e4cd54da901338f537af}
+
+
+S\+Eの音量の減少 
+
+\index{Play\+Data@{Play\+Data}!Less\+Speed@{Less\+Speed}}
+\index{Less\+Speed@{Less\+Speed}!Play\+Data@{Play\+Data}}
+\subsubsection[{\texorpdfstring{Less\+Speed()}{LessSpeed()}}]{\setlength{\rightskip}{0pt plus 5cm}void Play\+Data.\+Less\+Speed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_play_data_a3aaf96876ca0992bc7170d81725de4dc}{}\label{class_play_data_a3aaf96876ca0992bc7170d81725de4dc}
+
+
+速度減少 
+
+\index{Play\+Data@{Play\+Data}!Load\+System\+Data@{Load\+System\+Data}}
+\index{Load\+System\+Data@{Load\+System\+Data}!Play\+Data@{Play\+Data}}
+\subsubsection[{\texorpdfstring{Load\+System\+Data()}{LoadSystemData()}}]{\setlength{\rightskip}{0pt plus 5cm}I\+Enumerator Play\+Data.\+Load\+System\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_play_data_a7af0781e257708ef6ee6a02eb56984c4}{}\label{class_play_data_a7af0781e257708ef6ee6a02eb56984c4}
+
+
+システムデータの読み込み 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Play\+Data@{Play\+Data}!Reset\+Data@{Reset\+Data}}
+\index{Reset\+Data@{Reset\+Data}!Play\+Data@{Play\+Data}}
+\subsubsection[{\texorpdfstring{Reset\+Data()}{ResetData()}}]{\setlength{\rightskip}{0pt plus 5cm}void Play\+Data.\+Reset\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_play_data_a3840f7faaa54b86ff3ec207ef85b7033}{}\label{class_play_data_a3840f7faaa54b86ff3ec207ef85b7033}
+
+
+データのリセット 
+
+\index{Play\+Data@{Play\+Data}!Set\+Level@{Set\+Level}}
+\index{Set\+Level@{Set\+Level}!Play\+Data@{Play\+Data}}
+\subsubsection[{\texorpdfstring{Set\+Level(\+Level level)}{SetLevel(Level level)}}]{\setlength{\rightskip}{0pt plus 5cm}void Play\+Data.\+Set\+Level (
+\begin{DoxyParamCaption}
+\item[{Level}]{level}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_play_data_a67575e29933665c60e5f60135875bb69}{}\label{class_play_data_a67575e29933665c60e5f60135875bb69}
+
+
+難易度の設定 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \\
+\hline
+\end{DoxyParams}
+\index{Play\+Data@{Play\+Data}!Set\+Play\+Data@{Set\+Play\+Data}}
+\index{Set\+Play\+Data@{Set\+Play\+Data}!Play\+Data@{Play\+Data}}
+\subsubsection[{\texorpdfstring{Set\+Play\+Data()}{SetPlayData()}}]{\setlength{\rightskip}{0pt plus 5cm}void Play\+Data.\+Set\+Play\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_play_data_af321c45a332a001cf564dc34fbf6d200}{}\label{class_play_data_af321c45a332a001cf564dc34fbf6d200}
+
+
+プレイデータ(ノーツスピード、プール数、プールタイム)のセット 
+
+\index{Play\+Data@{Play\+Data}!Write\+System\+Data@{Write\+System\+Data}}
+\index{Write\+System\+Data@{Write\+System\+Data}!Play\+Data@{Play\+Data}}
+\subsubsection[{\texorpdfstring{Write\+System\+Data(float se\+Vol, float bgm\+Vol, Speed speed)}{WriteSystemData(float seVol, float bgmVol, Speed speed)}}]{\setlength{\rightskip}{0pt plus 5cm}void Play\+Data.\+Write\+System\+Data (
+\begin{DoxyParamCaption}
+\item[{float}]{se\+Vol, }
+\item[{float}]{bgm\+Vol, }
+\item[{Speed}]{speed}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_play_data_a6bc6a5c0b10fe2b7089b4ee043f42c89}{}\label{class_play_data_a6bc6a5c0b10fe2b7089b4ee043f42c89}
+
+
+システムデータの書き込み 既にデータがあるはずなのですでにあるものはいったん削除する 
+
+
+\begin{DoxyParams}{Parameters}
+{\em se\+Vol} & \\
+\hline
+{\em bgm\+Vol} & \\
+\hline
+{\em speed} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scripts/\+Play\+Data/Play\+Data.\+cs\end{DoxyCompactItemize}

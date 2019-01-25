@@ -1,0 +1,553 @@
+\hypertarget{class_sound_manager}{}\section{Sound\+Manager Class Reference}
+\label{class_sound_manager}\index{Sound\+Manager@{Sound\+Manager}}
+
+
+サウンドマネージャー  
+
+
+Inheritance diagram for Sound\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sound_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+delegate void {\bfseries Fade\+In\+Finished\+Func} ()\hypertarget{class_sound_manager_afd4c36c3c486f23f9ee6bf399444659d}{}\label{class_sound_manager_afd4c36c3c486f23f9ee6bf399444659d}
+
+\item 
+delegate void {\bfseries Fade\+Out\+Finished\+Func} ()\hypertarget{class_sound_manager_a56961e7c98925bbbed7666ce3c4ef3ab}{}\label{class_sound_manager_a56961e7c98925bbbed7666ce3c4ef3ab}
+
+\item 
+void \hyperlink{class_sound_manager_a36ec32643d2276d727460a3ab3de18df}{Clear\+Sounds\+List} ()
+\begin{DoxyCompactList}\small\item\em リストのクリア \end{DoxyCompactList}\item 
+void \hyperlink{class_sound_manager_a860981b17851570fd3a6d856987e48a1}{Set\+Sounds\+List} (\hyperlink{class_sound_table}{Sound\+Table} list)
+\begin{DoxyCompactList}\small\item\em リストのセット \end{DoxyCompactList}\item 
+void \hyperlink{class_sound_manager_ae923cec5a1bb1887a003cc2cf46ac08c}{Set\+Sound\+List} (\hyperlink{class_sound_list}{Sound\+List} list)
+\begin{DoxyCompactList}\small\item\em リストのセット \end{DoxyCompactList}\item 
+void \hyperlink{class_sound_manager_a8304f6c972f1b647f169f72544229f39}{Play} (string key, int channel\+Index=0, bool is\+Loop=false)
+\begin{DoxyCompactList}\small\item\em 再生 \end{DoxyCompactList}\item 
+void \hyperlink{class_sound_manager_a1c7c9d6ec13a3e973d6b7d35967d3e88}{Play} (int sound\+Index, int channel\+Index=0, bool is\+Loop=false)
+\begin{DoxyCompactList}\small\item\em 再生 \end{DoxyCompactList}\item 
+void \hyperlink{class_sound_manager_ae07fcf059f70d28547743aa58be78381}{Play\+On\+B\+GM} (string key, int channel\+Index=0)
+\begin{DoxyCompactList}\small\item\em B\+G\+M用の再生(ループ) \end{DoxyCompactList}\item 
+void \hyperlink{class_sound_manager_a5f049a14d661802e4ccd32bbf44c03c2}{Play\+On\+B\+GM} (int sound\+Index, int channel\+Index=0)
+\begin{DoxyCompactList}\small\item\em B\+G\+M用の再生(ループ) \end{DoxyCompactList}\item 
+void \hyperlink{class_sound_manager_a77140d592dfb496cf7def31f7880f9ea}{Play\+On\+SE} (string key, float volume=1.\+0f)
+\begin{DoxyCompactList}\small\item\em S\+E用の再生(一度) \end{DoxyCompactList}\item 
+void \hyperlink{class_sound_manager_a730961318ec947dfbd2a0a4dd8cb9642}{Play\+On\+SE} (string key, int channel\+Index, float volume=1.\+0f)
+\begin{DoxyCompactList}\small\item\em S\+E用の再生(一度) \end{DoxyCompactList}\item 
+void \hyperlink{class_sound_manager_ae61ef29d24c0df5478fced7a2c2b8998}{Play\+On\+SE} (int sound\+Index, float volume=1.\+0f)
+\begin{DoxyCompactList}\small\item\em S\+E用の再生(一度) \end{DoxyCompactList}\item 
+void \hyperlink{class_sound_manager_ab91718ea6321db485010e776438bc8d6}{Play\+On\+SE} (int sound\+Index, int channel\+Index, float volume=1.\+0f)
+\begin{DoxyCompactList}\small\item\em S\+E用の再生(一度) \end{DoxyCompactList}\item 
+void \hyperlink{class_sound_manager_a9dba56ed360cd252930b9f20539244cd}{Pause} (int channel\+Index)
+\begin{DoxyCompactList}\small\item\em 一時停止 \end{DoxyCompactList}\item 
+void \hyperlink{class_sound_manager_ab25efe5f76915409d0cccef8dfa93464}{Un\+Pause} (int channel\+Index)
+\begin{DoxyCompactList}\small\item\em 一時停止の解除 \end{DoxyCompactList}\item 
+void \hyperlink{class_sound_manager_a4b049d53b4fd9137a900d0b44c555a60}{Stop} (int channel\+Index)
+\begin{DoxyCompactList}\small\item\em 停止 \end{DoxyCompactList}\item 
+Audio\+Source \hyperlink{class_sound_manager_ae9f3da934103d1d6fa7901f3e60d5ccb}{Get\+Channel} (int channel\+Index)
+\begin{DoxyCompactList}\small\item\em 登録したチャネル(\+Audio\+Source)の取得 \end{DoxyCompactList}\item 
+I\+Enumerator \hyperlink{class_sound_manager_aeb06497852c55c68d829e9cd2b6c8c0c}{Fade\+In\+Coroutine} (float frame, float volume=0.\+0f, int channel\+Index=0, Fade\+In\+Finished\+Func func=null)
+\begin{DoxyCompactList}\small\item\em フェードインするコルーチン(小さくなる方) \end{DoxyCompactList}\item 
+I\+Enumerator \hyperlink{class_sound_manager_a835a7e59622535078cdb6e705d74a340}{Fade\+Out\+Coroutine} (float frame, float volume=1.\+0f, int channel\+Index=0, Fade\+Out\+Finished\+Func func=null)
+\begin{DoxyCompactList}\small\item\em フェードアウトするコルーチン(大きくなる方) \end{DoxyCompactList}\item 
+void \hyperlink{class_sound_manager_aed0690aa358d5d5c14febad7f7a14054}{Start\+Sound\+Fade\+In} (float frame, float volume=0.\+0f, int channel\+Index=0, Fade\+In\+Finished\+Func func=null)
+\begin{DoxyCompactList}\small\item\em フェードイン(小さくなる)の開始命令 \end{DoxyCompactList}\item 
+void \hyperlink{class_sound_manager_a008ec30f5bbbddb9268ad1bb0fc4b1b2}{Start\+Sound\+Fade\+Out} (float frame, float volume=1.\+0f, int channel\+Index=0, Fade\+Out\+Finished\+Func func=null)
+\begin{DoxyCompactList}\small\item\em フェードアウト(大きくなる)の開始命令 \end{DoxyCompactList}\item 
+I\+Enumerator \hyperlink{class_sound_manager_ae0b3882cf2d76b12e8ddbaf66d338ba6}{Sound\+Fade\+In\+All\+Coroutine} (float frame, float volume=0.\+0f, Fade\+In\+Finished\+Func func=null)
+\begin{DoxyCompactList}\small\item\em 全チャネルをフェードインさせるコルーチン(小さくする) \end{DoxyCompactList}\item 
+I\+Enumerator \hyperlink{class_sound_manager_af73150a7037521925d280cf2bc991c84}{Sound\+Fade\+Out\+All\+Coroutine} (float frame, float volume=1.\+0f, Fade\+Out\+Finished\+Func func=null)
+\begin{DoxyCompactList}\small\item\em 全チャネルをフェードアウトさせるコルーチン(大きくする) \end{DoxyCompactList}\item 
+void \hyperlink{class_sound_manager_a4008b5901ae32bf230593c35a322a9d1}{Start\+Sound\+Fade\+In\+All} (float frame, float volume=0.\+0f, Fade\+In\+Finished\+Func func=null)
+\begin{DoxyCompactList}\small\item\em 全チャネルのフェードイン開始命令 \end{DoxyCompactList}\item 
+void \hyperlink{class_sound_manager_a9645299a9bb7cf0056abe29e8a14e32e}{Start\+Sound\+Fade\+Out\+All} (float frame, float volume=1.\+0f, Fade\+Out\+Finished\+Func func=null)
+\begin{DoxyCompactList}\small\item\em 全チャネルのフェードアウト開始命令 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries is\+Fade}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\hypertarget{class_sound_manager_ad1424367cc1cbdf1c015fa0923a18c27}{}\label{class_sound_manager_ad1424367cc1cbdf1c015fa0923a18c27}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+サウンドマネージャー 
+
+
+
+\subsection{Member Function Documentation}
+\index{Sound\+Manager@{Sound\+Manager}!Clear\+Sounds\+List@{Clear\+Sounds\+List}}
+\index{Clear\+Sounds\+List@{Clear\+Sounds\+List}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection[{\texorpdfstring{Clear\+Sounds\+List()}{ClearSoundsList()}}]{\setlength{\rightskip}{0pt plus 5cm}void Sound\+Manager.\+Clear\+Sounds\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sound_manager_a36ec32643d2276d727460a3ab3de18df}{}\label{class_sound_manager_a36ec32643d2276d727460a3ab3de18df}
+
+
+リストのクリア 
+
+\index{Sound\+Manager@{Sound\+Manager}!Fade\+In\+Coroutine@{Fade\+In\+Coroutine}}
+\index{Fade\+In\+Coroutine@{Fade\+In\+Coroutine}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection[{\texorpdfstring{Fade\+In\+Coroutine(float frame, float volume=0.\+0f, int channel\+Index=0, Fade\+In\+Finished\+Func func=null)}{FadeInCoroutine(float frame, float volume=0.0f, int channelIndex=0, FadeInFinishedFunc func=null)}}]{\setlength{\rightskip}{0pt plus 5cm}I\+Enumerator Sound\+Manager.\+Fade\+In\+Coroutine (
+\begin{DoxyParamCaption}
+\item[{float}]{frame, }
+\item[{float}]{volume = {\ttfamily 0.0f}, }
+\item[{int}]{channel\+Index = {\ttfamily 0}, }
+\item[{Fade\+In\+Finished\+Func}]{func = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sound_manager_aeb06497852c55c68d829e9cd2b6c8c0c}{}\label{class_sound_manager_aeb06497852c55c68d829e9cd2b6c8c0c}
+
+
+フェードインするコルーチン(小さくなる方) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & フェードさせるフレーム\\
+\hline
+{\em volume} & フェード先のボリューム(0.\+0～1.0)\\
+\hline
+{\em fade\+In\+Finished} & フェードイン終了後に行う関数\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Sound\+Manager@{Sound\+Manager}!Fade\+Out\+Coroutine@{Fade\+Out\+Coroutine}}
+\index{Fade\+Out\+Coroutine@{Fade\+Out\+Coroutine}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection[{\texorpdfstring{Fade\+Out\+Coroutine(float frame, float volume=1.\+0f, int channel\+Index=0, Fade\+Out\+Finished\+Func func=null)}{FadeOutCoroutine(float frame, float volume=1.0f, int channelIndex=0, FadeOutFinishedFunc func=null)}}]{\setlength{\rightskip}{0pt plus 5cm}I\+Enumerator Sound\+Manager.\+Fade\+Out\+Coroutine (
+\begin{DoxyParamCaption}
+\item[{float}]{frame, }
+\item[{float}]{volume = {\ttfamily 1.0f}, }
+\item[{int}]{channel\+Index = {\ttfamily 0}, }
+\item[{Fade\+Out\+Finished\+Func}]{func = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sound_manager_a835a7e59622535078cdb6e705d74a340}{}\label{class_sound_manager_a835a7e59622535078cdb6e705d74a340}
+
+
+フェードアウトするコルーチン(大きくなる方) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & フェードさせるフレーム\\
+\hline
+{\em volume} & フェード先のボリューム(0.\+0～1.0)\\
+\hline
+{\em fade\+In\+Finished} & フェードアウト終了後に行う関数\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Sound\+Manager@{Sound\+Manager}!Get\+Channel@{Get\+Channel}}
+\index{Get\+Channel@{Get\+Channel}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection[{\texorpdfstring{Get\+Channel(int channel\+Index)}{GetChannel(int channelIndex)}}]{\setlength{\rightskip}{0pt plus 5cm}Audio\+Source Sound\+Manager.\+Get\+Channel (
+\begin{DoxyParamCaption}
+\item[{int}]{channel\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sound_manager_ae9f3da934103d1d6fa7901f3e60d5ccb}{}\label{class_sound_manager_ae9f3da934103d1d6fa7901f3e60d5ccb}
+
+
+登録したチャネル(\+Audio\+Source)の取得 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Index} & チャネルの番号\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Sound\+Manager@{Sound\+Manager}!Pause@{Pause}}
+\index{Pause@{Pause}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection[{\texorpdfstring{Pause(int channel\+Index)}{Pause(int channelIndex)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sound\+Manager.\+Pause (
+\begin{DoxyParamCaption}
+\item[{int}]{channel\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sound_manager_a9dba56ed360cd252930b9f20539244cd}{}\label{class_sound_manager_a9dba56ed360cd252930b9f20539244cd}
+
+
+一時停止 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Index} & 一時停止するチャネルの番号\\
+\hline
+\end{DoxyParams}
+\index{Sound\+Manager@{Sound\+Manager}!Play@{Play}}
+\index{Play@{Play}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection[{\texorpdfstring{Play(string key, int channel\+Index=0, bool is\+Loop=false)}{Play(string key, int channelIndex=0, bool isLoop=false)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sound\+Manager.\+Play (
+\begin{DoxyParamCaption}
+\item[{string}]{key, }
+\item[{int}]{channel\+Index = {\ttfamily 0}, }
+\item[{bool}]{is\+Loop = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sound_manager_a8304f6c972f1b647f169f72544229f39}{}\label{class_sound_manager_a8304f6c972f1b647f169f72544229f39}
+
+
+再生 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & 登録されたサウンドリストのハッシュキー\\
+\hline
+{\em channel\+Index} & 鳴らすチャネルの番号\\
+\hline
+{\em is\+Loop} & ループ有無\\
+\hline
+\end{DoxyParams}
+\index{Sound\+Manager@{Sound\+Manager}!Play@{Play}}
+\index{Play@{Play}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection[{\texorpdfstring{Play(int sound\+Index, int channel\+Index=0, bool is\+Loop=false)}{Play(int soundIndex, int channelIndex=0, bool isLoop=false)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sound\+Manager.\+Play (
+\begin{DoxyParamCaption}
+\item[{int}]{sound\+Index, }
+\item[{int}]{channel\+Index = {\ttfamily 0}, }
+\item[{bool}]{is\+Loop = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sound_manager_a1c7c9d6ec13a3e973d6b7d35967d3e88}{}\label{class_sound_manager_a1c7c9d6ec13a3e973d6b7d35967d3e88}
+
+
+再生 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sound\+Index} & 登録されたサウンドリストのインデックス\\
+\hline
+{\em channel\+Index} & 鳴らすチャネルの番号\\
+\hline
+{\em is\+Loop} & ループ有無\\
+\hline
+\end{DoxyParams}
+\index{Sound\+Manager@{Sound\+Manager}!Play\+On\+B\+GM@{Play\+On\+B\+GM}}
+\index{Play\+On\+B\+GM@{Play\+On\+B\+GM}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection[{\texorpdfstring{Play\+On\+B\+G\+M(string key, int channel\+Index=0)}{PlayOnBGM(string key, int channelIndex=0)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sound\+Manager.\+Play\+On\+B\+GM (
+\begin{DoxyParamCaption}
+\item[{string}]{key, }
+\item[{int}]{channel\+Index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sound_manager_ae07fcf059f70d28547743aa58be78381}{}\label{class_sound_manager_ae07fcf059f70d28547743aa58be78381}
+
+
+B\+G\+M用の再生(ループ) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & 登録されたサウンドリストのハッシュキー\\
+\hline
+{\em channel\+Index} & 鳴らすチャネルの番号\\
+\hline
+\end{DoxyParams}
+\index{Sound\+Manager@{Sound\+Manager}!Play\+On\+B\+GM@{Play\+On\+B\+GM}}
+\index{Play\+On\+B\+GM@{Play\+On\+B\+GM}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection[{\texorpdfstring{Play\+On\+B\+G\+M(int sound\+Index, int channel\+Index=0)}{PlayOnBGM(int soundIndex, int channelIndex=0)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sound\+Manager.\+Play\+On\+B\+GM (
+\begin{DoxyParamCaption}
+\item[{int}]{sound\+Index, }
+\item[{int}]{channel\+Index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sound_manager_a5f049a14d661802e4ccd32bbf44c03c2}{}\label{class_sound_manager_a5f049a14d661802e4ccd32bbf44c03c2}
+
+
+B\+G\+M用の再生(ループ) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sound\+Index} & 登録されたサウンドリストのインデックス\\
+\hline
+{\em channel\+Index} & 鳴らすチャネルの番号\\
+\hline
+\end{DoxyParams}
+\index{Sound\+Manager@{Sound\+Manager}!Play\+On\+SE@{Play\+On\+SE}}
+\index{Play\+On\+SE@{Play\+On\+SE}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection[{\texorpdfstring{Play\+On\+S\+E(string key, float volume=1.\+0f)}{PlayOnSE(string key, float volume=1.0f)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sound\+Manager.\+Play\+On\+SE (
+\begin{DoxyParamCaption}
+\item[{string}]{key, }
+\item[{float}]{volume = {\ttfamily 1.0f}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sound_manager_a77140d592dfb496cf7def31f7880f9ea}{}\label{class_sound_manager_a77140d592dfb496cf7def31f7880f9ea}
+
+
+S\+E用の再生(一度) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & 登録されたサウンドリストのハッシュキー\\
+\hline
+{\em volume} & 音量(0.\+0～1.0)\\
+\hline
+\end{DoxyParams}
+\index{Sound\+Manager@{Sound\+Manager}!Play\+On\+SE@{Play\+On\+SE}}
+\index{Play\+On\+SE@{Play\+On\+SE}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection[{\texorpdfstring{Play\+On\+S\+E(string key, int channel\+Index, float volume=1.\+0f)}{PlayOnSE(string key, int channelIndex, float volume=1.0f)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sound\+Manager.\+Play\+On\+SE (
+\begin{DoxyParamCaption}
+\item[{string}]{key, }
+\item[{int}]{channel\+Index, }
+\item[{float}]{volume = {\ttfamily 1.0f}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sound_manager_a730961318ec947dfbd2a0a4dd8cb9642}{}\label{class_sound_manager_a730961318ec947dfbd2a0a4dd8cb9642}
+
+
+S\+E用の再生(一度) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & 登録されたサウンドリストのハッシュキー\\
+\hline
+{\em volume} & 音量(0.\+0～1.0)\\
+\hline
+\end{DoxyParams}
+\index{Sound\+Manager@{Sound\+Manager}!Play\+On\+SE@{Play\+On\+SE}}
+\index{Play\+On\+SE@{Play\+On\+SE}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection[{\texorpdfstring{Play\+On\+S\+E(int sound\+Index, float volume=1.\+0f)}{PlayOnSE(int soundIndex, float volume=1.0f)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sound\+Manager.\+Play\+On\+SE (
+\begin{DoxyParamCaption}
+\item[{int}]{sound\+Index, }
+\item[{float}]{volume = {\ttfamily 1.0f}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sound_manager_ae61ef29d24c0df5478fced7a2c2b8998}{}\label{class_sound_manager_ae61ef29d24c0df5478fced7a2c2b8998}
+
+
+S\+E用の再生(一度) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sound\+Index} & 登録されたサウンドリストのインデックス\\
+\hline
+{\em volume} & 音量(0.\+0～1.0)\\
+\hline
+\end{DoxyParams}
+\index{Sound\+Manager@{Sound\+Manager}!Play\+On\+SE@{Play\+On\+SE}}
+\index{Play\+On\+SE@{Play\+On\+SE}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection[{\texorpdfstring{Play\+On\+S\+E(int sound\+Index, int channel\+Index, float volume=1.\+0f)}{PlayOnSE(int soundIndex, int channelIndex, float volume=1.0f)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sound\+Manager.\+Play\+On\+SE (
+\begin{DoxyParamCaption}
+\item[{int}]{sound\+Index, }
+\item[{int}]{channel\+Index, }
+\item[{float}]{volume = {\ttfamily 1.0f}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sound_manager_ab91718ea6321db485010e776438bc8d6}{}\label{class_sound_manager_ab91718ea6321db485010e776438bc8d6}
+
+
+S\+E用の再生(一度) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sound\+Index} & 登録されたサウンドリストのインデックス\\
+\hline
+{\em volume} & 音量(0.\+0～1.0)\\
+\hline
+\end{DoxyParams}
+\index{Sound\+Manager@{Sound\+Manager}!Set\+Sound\+List@{Set\+Sound\+List}}
+\index{Set\+Sound\+List@{Set\+Sound\+List}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection[{\texorpdfstring{Set\+Sound\+List(\+Sound\+List list)}{SetSoundList(SoundList list)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sound\+Manager.\+Set\+Sound\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf Sound\+List}}]{list}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sound_manager_ae923cec5a1bb1887a003cc2cf46ac08c}{}\label{class_sound_manager_ae923cec5a1bb1887a003cc2cf46ac08c}
+
+
+リストのセット 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & \\
+\hline
+\end{DoxyParams}
+\index{Sound\+Manager@{Sound\+Manager}!Set\+Sounds\+List@{Set\+Sounds\+List}}
+\index{Set\+Sounds\+List@{Set\+Sounds\+List}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection[{\texorpdfstring{Set\+Sounds\+List(\+Sound\+Table list)}{SetSoundsList(SoundTable list)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sound\+Manager.\+Set\+Sounds\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf Sound\+Table}}]{list}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sound_manager_a860981b17851570fd3a6d856987e48a1}{}\label{class_sound_manager_a860981b17851570fd3a6d856987e48a1}
+
+
+リストのセット 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & \\
+\hline
+\end{DoxyParams}
+\index{Sound\+Manager@{Sound\+Manager}!Sound\+Fade\+In\+All\+Coroutine@{Sound\+Fade\+In\+All\+Coroutine}}
+\index{Sound\+Fade\+In\+All\+Coroutine@{Sound\+Fade\+In\+All\+Coroutine}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection[{\texorpdfstring{Sound\+Fade\+In\+All\+Coroutine(float frame, float volume=0.\+0f, Fade\+In\+Finished\+Func func=null)}{SoundFadeInAllCoroutine(float frame, float volume=0.0f, FadeInFinishedFunc func=null)}}]{\setlength{\rightskip}{0pt plus 5cm}I\+Enumerator Sound\+Manager.\+Sound\+Fade\+In\+All\+Coroutine (
+\begin{DoxyParamCaption}
+\item[{float}]{frame, }
+\item[{float}]{volume = {\ttfamily 0.0f}, }
+\item[{Fade\+In\+Finished\+Func}]{func = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sound_manager_ae0b3882cf2d76b12e8ddbaf66d338ba6}{}\label{class_sound_manager_ae0b3882cf2d76b12e8ddbaf66d338ba6}
+
+
+全チャネルをフェードインさせるコルーチン(小さくする) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & フェードさせるフレーム\\
+\hline
+{\em volume} & フェード先のボリューム(0.\+0～1.0)\\
+\hline
+{\em func} & フェードイン終了後に行う関数\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Sound\+Manager@{Sound\+Manager}!Sound\+Fade\+Out\+All\+Coroutine@{Sound\+Fade\+Out\+All\+Coroutine}}
+\index{Sound\+Fade\+Out\+All\+Coroutine@{Sound\+Fade\+Out\+All\+Coroutine}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection[{\texorpdfstring{Sound\+Fade\+Out\+All\+Coroutine(float frame, float volume=1.\+0f, Fade\+Out\+Finished\+Func func=null)}{SoundFadeOutAllCoroutine(float frame, float volume=1.0f, FadeOutFinishedFunc func=null)}}]{\setlength{\rightskip}{0pt plus 5cm}I\+Enumerator Sound\+Manager.\+Sound\+Fade\+Out\+All\+Coroutine (
+\begin{DoxyParamCaption}
+\item[{float}]{frame, }
+\item[{float}]{volume = {\ttfamily 1.0f}, }
+\item[{Fade\+Out\+Finished\+Func}]{func = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sound_manager_af73150a7037521925d280cf2bc991c84}{}\label{class_sound_manager_af73150a7037521925d280cf2bc991c84}
+
+
+全チャネルをフェードアウトさせるコルーチン(大きくする) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & フェードさせるフレーム\\
+\hline
+{\em volume} & フェード先のボリューム(0.\+0～1.0)\\
+\hline
+{\em func} & フェードアウト終了後に行う関数\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Sound\+Manager@{Sound\+Manager}!Start\+Sound\+Fade\+In@{Start\+Sound\+Fade\+In}}
+\index{Start\+Sound\+Fade\+In@{Start\+Sound\+Fade\+In}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection[{\texorpdfstring{Start\+Sound\+Fade\+In(float frame, float volume=0.\+0f, int channel\+Index=0, Fade\+In\+Finished\+Func func=null)}{StartSoundFadeIn(float frame, float volume=0.0f, int channelIndex=0, FadeInFinishedFunc func=null)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sound\+Manager.\+Start\+Sound\+Fade\+In (
+\begin{DoxyParamCaption}
+\item[{float}]{frame, }
+\item[{float}]{volume = {\ttfamily 0.0f}, }
+\item[{int}]{channel\+Index = {\ttfamily 0}, }
+\item[{Fade\+In\+Finished\+Func}]{func = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sound_manager_aed0690aa358d5d5c14febad7f7a14054}{}\label{class_sound_manager_aed0690aa358d5d5c14febad7f7a14054}
+
+
+フェードイン(小さくなる)の開始命令 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & フェードさせるフレーム\\
+\hline
+{\em volume} & フェード先のボリューム(0.\+0～1.0)\\
+\hline
+{\em channel\+Index} & フェードさせるチャネルの番号\\
+\hline
+{\em func} & フェードイン終了後に行う関数\\
+\hline
+\end{DoxyParams}
+\index{Sound\+Manager@{Sound\+Manager}!Start\+Sound\+Fade\+In\+All@{Start\+Sound\+Fade\+In\+All}}
+\index{Start\+Sound\+Fade\+In\+All@{Start\+Sound\+Fade\+In\+All}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection[{\texorpdfstring{Start\+Sound\+Fade\+In\+All(float frame, float volume=0.\+0f, Fade\+In\+Finished\+Func func=null)}{StartSoundFadeInAll(float frame, float volume=0.0f, FadeInFinishedFunc func=null)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sound\+Manager.\+Start\+Sound\+Fade\+In\+All (
+\begin{DoxyParamCaption}
+\item[{float}]{frame, }
+\item[{float}]{volume = {\ttfamily 0.0f}, }
+\item[{Fade\+In\+Finished\+Func}]{func = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sound_manager_a4008b5901ae32bf230593c35a322a9d1}{}\label{class_sound_manager_a4008b5901ae32bf230593c35a322a9d1}
+
+
+全チャネルのフェードイン開始命令 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & フェードさせるフレーム\\
+\hline
+{\em volume} & フェード先のボリューム\\
+\hline
+{\em func} & フェードイン終了後に行う関数\\
+\hline
+\end{DoxyParams}
+\index{Sound\+Manager@{Sound\+Manager}!Start\+Sound\+Fade\+Out@{Start\+Sound\+Fade\+Out}}
+\index{Start\+Sound\+Fade\+Out@{Start\+Sound\+Fade\+Out}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection[{\texorpdfstring{Start\+Sound\+Fade\+Out(float frame, float volume=1.\+0f, int channel\+Index=0, Fade\+Out\+Finished\+Func func=null)}{StartSoundFadeOut(float frame, float volume=1.0f, int channelIndex=0, FadeOutFinishedFunc func=null)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sound\+Manager.\+Start\+Sound\+Fade\+Out (
+\begin{DoxyParamCaption}
+\item[{float}]{frame, }
+\item[{float}]{volume = {\ttfamily 1.0f}, }
+\item[{int}]{channel\+Index = {\ttfamily 0}, }
+\item[{Fade\+Out\+Finished\+Func}]{func = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sound_manager_a008ec30f5bbbddb9268ad1bb0fc4b1b2}{}\label{class_sound_manager_a008ec30f5bbbddb9268ad1bb0fc4b1b2}
+
+
+フェードアウト(大きくなる)の開始命令 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & フェードさせるフレーム\\
+\hline
+{\em volume} & フェード先のボリューム(0.\+0～1.0)\\
+\hline
+{\em channel\+Index} & フェードさせるチャネルの番号\\
+\hline
+{\em func} & フェードアウト終了後に行う関数\\
+\hline
+\end{DoxyParams}
+\index{Sound\+Manager@{Sound\+Manager}!Start\+Sound\+Fade\+Out\+All@{Start\+Sound\+Fade\+Out\+All}}
+\index{Start\+Sound\+Fade\+Out\+All@{Start\+Sound\+Fade\+Out\+All}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection[{\texorpdfstring{Start\+Sound\+Fade\+Out\+All(float frame, float volume=1.\+0f, Fade\+Out\+Finished\+Func func=null)}{StartSoundFadeOutAll(float frame, float volume=1.0f, FadeOutFinishedFunc func=null)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sound\+Manager.\+Start\+Sound\+Fade\+Out\+All (
+\begin{DoxyParamCaption}
+\item[{float}]{frame, }
+\item[{float}]{volume = {\ttfamily 1.0f}, }
+\item[{Fade\+Out\+Finished\+Func}]{func = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sound_manager_a9645299a9bb7cf0056abe29e8a14e32e}{}\label{class_sound_manager_a9645299a9bb7cf0056abe29e8a14e32e}
+
+
+全チャネルのフェードアウト開始命令 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & フェードさせるフレーム\\
+\hline
+{\em volume} & フェード先のボリューム\\
+\hline
+{\em func} & フェードアウト終了後に行う関数\\
+\hline
+\end{DoxyParams}
+\index{Sound\+Manager@{Sound\+Manager}!Stop@{Stop}}
+\index{Stop@{Stop}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection[{\texorpdfstring{Stop(int channel\+Index)}{Stop(int channelIndex)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sound\+Manager.\+Stop (
+\begin{DoxyParamCaption}
+\item[{int}]{channel\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sound_manager_a4b049d53b4fd9137a900d0b44c555a60}{}\label{class_sound_manager_a4b049d53b4fd9137a900d0b44c555a60}
+
+
+停止 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Index} & 停止するチャネルの番号\\
+\hline
+\end{DoxyParams}
+\index{Sound\+Manager@{Sound\+Manager}!Un\+Pause@{Un\+Pause}}
+\index{Un\+Pause@{Un\+Pause}!Sound\+Manager@{Sound\+Manager}}
+\subsubsection[{\texorpdfstring{Un\+Pause(int channel\+Index)}{UnPause(int channelIndex)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sound\+Manager.\+Un\+Pause (
+\begin{DoxyParamCaption}
+\item[{int}]{channel\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sound_manager_ab25efe5f76915409d0cccef8dfa93464}{}\label{class_sound_manager_ab25efe5f76915409d0cccef8dfa93464}
+
+
+一時停止の解除 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Index} & 一時停止を解除するチャネルの番号\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scripts/\+Sound/Sound\+Manager.\+cs\end{DoxyCompactItemize}
